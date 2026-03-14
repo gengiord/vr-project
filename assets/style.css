@@ -275,10 +275,12 @@ nav {
     margin-bottom: 1rem;
 }
 
-.spec-block h3 {
-    font-size: 0.92rem;
+.spec-block h3,
+.phase-title {
+    font-size: 0.88rem;
     font-weight: 600;
     color: var(--accent);
+    margin-top: 1rem;
 }
 
 .spec-block p {

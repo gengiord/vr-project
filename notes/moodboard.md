@@ -1,6 +1,22 @@
 # Moodboard
 
-Reference visivi, palette colori e atmosfere per atto
+Stile visivo, palette colori e reference per atto
+
+---
+
+## Stile Visivo
+
+### Direzione Artistica
+Stilizzato-cinematografico. Non fotorealistico, ma evocativo. Forme essenziali, luce protagonista. Ispirazione: Journey (thatgamecompany), Gris, Abzu.
+
+### Materiali e Texture
+Superfici lisce e riflettenti (acqua). Materiali caldi e grezzi (fucina). Particelle volumetriche. Effetti glow e bloom controllati.
+
+### Illuminazione
+Luce come elemento narrativo. Buio → luce tenue → luce calda → alba piena. Le mani del giocatore sono sempre fonte di luce.
+
+### Particelle
+Scintille (fucina), gocce luminose (splash), particelle dorate (sagoma), stelle (epilogo), lucciole (transizioni).
 
 ---
 
@@ -40,22 +56,6 @@ Alba dal mare. Viola, rosa, oro pieno. Gabbiani. Luce che invade tutto.
 - Rosa `#e8788a`
 - Arancione `#f5a623`
 - Oro pieno `#ffd700`
-
----
-
-## Stile Visivo
-
-### Direzione Artistica
-Stilizzato-cinematografico. Non fotorealistico, ma evocativo. Forme essenziali, luce protagonista. Ispirazione: Journey (thatgamecompany), Gris, Abzu.
-
-### Materiali e Texture
-Superfici lisce e riflettenti (acqua). Materiali caldi e grezzi (fucina). Particelle volumetriche. Effetti glow e bloom controllati.
-
-### Illuminazione
-Luce come elemento narrativo. Buio → luce tenue → luce calda → alba piena. Le mani del giocatore sono sempre fonte di luce.
-
-### Particelle
-Scintille (fucina), gocce luminose (splash), particelle dorate (sagoma), stelle (epilogo), lucciole (transizioni).
 
 ---
 

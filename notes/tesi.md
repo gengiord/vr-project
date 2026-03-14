@@ -60,20 +60,6 @@ Ricerca teorica → Consulenza con psicologo → Game design → Sviluppo → Do
 
 ---
 
-## Tecnologie
-
-### Hardware
-- Meta Quest (standalone)
-- Hand tracking nativo
-- Seduto, senza controller
-
-### Software
-- Unity + Meta XR All-In-One SDK
-- ElevenLabs TTS (voce narrante)
-- Audio spaziale
-
----
-
 ## Messaggio
 
 > "Più lasci andare il peso, più puoi avvicinarti a chi hai perso."

@@ -1,18 +1,16 @@
-# Voce Narrante — "Il Viaggio" v5
+# Audio — "Il Viaggio"
 
-38 battute — ~1m 40s su 15-25 min (~7% del tempo)
+Voce narrante, musica e sound design
 
 ---
 
-## Specifiche
+## Voce Narrante
+
+38 battute — ~1m 40s su 15-25 min (~7% del tempo). Calma, profonda, intima. Non clinica, non teatrale. Una voce che accompagna senza giudicare.
 
 - **Servizio:** ElevenLabs
 - **Modello:** Multilingual v3
 - **Voce:** Italiana Custom
-
-## Tono
-
-Calma, profonda, intima. Non clinica, non teatrale. Una voce che accompagna senza giudicare. Pause lunghe tra le frasi. Ritmo lento. Come qualcuno che ti parla da vicino, senza fretta.
 
 ---
 
@@ -149,11 +147,36 @@ Calma, profonda, intima. Non clinica, non teatrale. Una voce che accompagna senz
 
 ---
 
+## Musica — Colonna Sonora
+
+Musica adattiva e dinamica, generata o selezionata per accompagnare l'esperienza emotiva. Mai invadente, sempre in sottofondo. Transizioni morbide tra le fasi.
+
+| Fase | Stile musicale | Mood |
+|---|---|---|
+| Prologo | Silenzio → battito lento | Vulnerabilità, attesa |
+| Atto 1 — Fuoco | Drone profondo, percussivo | Potenza, calore |
+| Atto 1 — Porta | Silenzio teso | Mistero, soglia |
+| Atto 2 — Acqua | Archi bassi, crescente | Malinconia, rilascio |
+| Atto 3 — Incontro | Melodia emotiva, piano | Intimità, pace |
+| Epilogo — Alba | Crescendo → pace | Rinascita, speranza |
+
+---
+
+## Sound Design — SFX
+
+Audio spaziale 3D. Ogni suono ha una posizione nello spazio. Feedback sonoro per ogni interazione del giocatore.
+
+| Fase | SFX principali | Feedback interazione |
+|---|---|---|
+| Prologo | Sfere luminose, toni delicati | Tap: tono cristallino. Grab: suono morbido. Throw: whoosh. |
+| Atto 1 — Fuoco | Braci, scintille, calore | Martellate: impatto metallico + scintille. Chiave: tono rivelazione. |
+| Atto 1 — Porta | Chiave nella serratura, meccanismo | Rotazione: click meccanico. Apertura: rumble basso. |
+| Atto 2 — Acqua | Mare, onde, vento notturno | Lancio pietra: whoosh → splash. Onda luminosa: shimmer. |
+| Atto 3 — Incontro | Mare calmo, vento stellato | Tocco sfera-parola: cristallo + risonanza. Dissoluzione: particelle. |
+| Epilogo — Alba | Mare al mattino, gabbiani, luce | Gesti creativi: suoni generativi diversi per ogni gesto. |
+
 ---
 
 ## Audio Esempio
 
-*Sezione per la riproduzione di campioni audio della voce narrante.*
-
-<!-- Inserire qui i file audio di esempio -->
-<!-- <audio controls><source src="audio/esempio_prologo.wav" type="audio/wav"></audio> -->
+*Sezione per la riproduzione di campioni audio della voce narrante, musica e SFX.*

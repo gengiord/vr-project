@@ -1,6 +1,6 @@
 # Specifiche Tecniche
 
-Gesture, ambienti, audio e copertura GGT
+Gesture, ambienti, software, strumenti AI e copertura GGT
 
 ---
 
@@ -34,18 +34,34 @@ Tutti i gesti sono equivalenti a movimenti quotidiani da seduti. Escursione mass
 
 ---
 
+## Software e SDK
+
+| Strumento | Versione | Ruolo |
+|---|---|---|
+| Unity | 2022.3 LTS | Game engine principale |
+| Meta XR All-In-One SDK | Latest | Hand tracking, passthrough, interazione VR |
+| Meta Quest | Quest 3 / Quest 2 | Piattaforma target (standalone) |
+| ElevenLabs | Multilingual v3 | Generazione voce narrante (TTS) |
+| Visual Studio Code | Latest | Editor codice C# |
+
+---
+
+## Strumenti AI
+
+Il progetto utilizza strumenti AI per accelerare la produzione:
+
+| Strumento | Uso |
+|---|---|
+| Windsurf (Cascade) | Assistente di codifica per sviluppo Unity, debugging, documentazione e gestione del sito |
+| Google Gemini | Ricerca, analisi testi accademici, generazione bozze per la tesi, brainstorming |
+| ElevenLabs | Generazione voce narrante italiana custom (Multilingual v3) |
+| Meshy AI | Generazione modelli 3D e concept art per ambienti e oggetti interattivi |
+
+---
+
 ## Audio
 
-| Fase | Musica | SFX | Voce |
-|---|---|---|---|
-| Prologo | Silenzio → battito lento | Sfere, toni delicati | Guida tutorial |
-| Fucina | Drone profondo | Martellate, scintille | Introduce, poi tace |
-| Porta | Silenzio teso | Chiave, serratura | 2 frasi brevi |
-| Mare | Archi bassi, crescente | Lancio, splash, onde | Introduce, poi tace |
-| Incontro | Melodia emotiva | Sfere cristalline, vento | Introduce silenzio |
-| Alba | Crescendo → pace | Mare, gabbiani, luce | Chiude l'esperienza |
-
-**Voce narrante totale: ~1m 40s su 15-25 min (~7% del tempo)**
+Voce narrante (38 battute, ~1m 40s), musica adattiva e SFX spaziali 3D. Per lo script completo, le tempistiche e il sound design dettagliato vedi la pagina **Audio**.
 
 ---
 
