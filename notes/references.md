@@ -23,58 +23,6 @@ Progetto coreano che permette alle persone di incontrare virtualmente i propri c
 
 ---
 
-## Fonti Teoriche — Psicologia del Lutto
-
-### Kübler-Ross, Elisabeth — On Death and Dying (1969)
-Opera fondamentale che introduce il modello a cinque fasi del lutto (negazione, rabbia, negoziazione, depressione, accettazione). Ha rivoluzionato l'approccio alla morte nella cultura occidentale.
-
-**Rilevanza per il progetto:** Struttura emotiva dell'esperienza, progressione naturale del percorso.
-
-### De Luca, Maria Luisa — Psicoterapia per il lutto. La Grief and Growth Therapy (2024)
-Modello integrativo che combina quattro pilastri — Modello Duale del Lutto (Stroebe & Schut), Continuing Bonds (Klass), Crescita Post Traumatica (Tedeschi & Calhoun) e ricerca di senso (Neimeyer, Frankl) — all'interno di una cornice di Analisi Transazionale. Si concentra su come la perdita possa portare a crescita personale e trasformazione attraverso l'oscillazione adattiva tra orientamento alla perdita e alla ricostruzione, e la trasformazione del legame con il defunto.
-
-**Rilevanza per il progetto:** Framework teorico principale. I quattro pilastri della GGT mappano direttamente sull'arco narrativo dell'esperienza VR. Le metafore terapeutiche (Scrigno interno, Distillato) ispirano il design simbolico.
-
-### Stroebe, Margaret & Schut, Henk — The Dual Process Model (1999)
-Modello che descrive l'oscillazione tra "loss-oriented" e "restoration-oriented" coping nell'elaborazione del lutto. Spiega perché le persone alternano momenti di tristezza con momenti di distrazione.
-
-**Rilevanza per il progetto:** Design dei ritmi dell'esperienza, alternanza tra momenti intensi e quieti.
-
----
-
-## Fonti Tecniche — VR e Design
-
-### Bailenson, Jeremy — Experience on Demand (2018)
-Esplorazione completa delle applicazioni della VR, dall'empatia alla formazione. Analizza come la VR può cambiare il comportamento umano e le implicazioni etiche.
-
-**Rilevanza per il progetto:** Design per l'empatia, limiti etici, potenziale trasformativo.
-
-### Slater, Mel & Riva, Giuseppe — Presence and Embodiment in VR (2016)
-Studio sui concetti di "presence" (sensazione di essere lì) e "embodiment" (sensazione di abitare un corpo virtuale). Fondamentale per capire come la VR influenza le emozioni.
-
-**Rilevanza per il progetto:** Design dell'interazione, hand tracking, immersione emotiva.
-
-### Schell, Jesse — The Art of Game Design (2019)
-Manuale completo di game design con i "lenses" — strumenti per analizzare e migliorare i giochi. Include sezioni su design per emozioni ed esperienze significative.
-
-**Rilevanza per il progetto:** Metodologia di design, meccaniche significative, testing iterativo.
-
----
-
-## Fonti Culturali — Lutto nell'Era Digitale
-
-### Sisto, Davide — La morte si fa social (2018)
-Analisi di come i social media hanno trasformato il lutto contemporaneo. Esplora memorial digitali, lutto online e nuove forme di commemorazione.
-
-**Rilevanza per il progetto:** Contesto culturale, aspettative moderne del lutto, ruolo della tecnologia.
-
-### Sisto, Davide — Online Afterlives (2020)
-Versione inglese ampliata. Esplora come la tecnologia digitale sta cambiando il nostro rapporto con la morte e la memoria, dai profili social all'intelligenza artificiale.
-
-**Rilevanza per il progetto:** Visione critica, implicazioni etiche, futuro del lutto digitale.
-
----
-
 ## Fonti Artistiche — Stile Visivo
 
 ### Gris — Nomada Studio (2018)

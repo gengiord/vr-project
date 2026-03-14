@@ -4,16 +4,11 @@
 
 ---
 
-## Specifiche Tecniche
+## Specifiche
 
-- **Servizio:** ElevenLabs Text-to-Speech
-- **Modello:** Multilingual v2
-- **Voce consigliata:** Bella (femminile, calma, profonda) o Adam (maschile, morbido, profondo)
-- **Velocità:** 0.85x (più lenta del normale)
-- **Prosodia:** Pausa naturale dopo ogni frase, pause lunghe dove indicato
-- **Effetti:** Leggera riverberazione per sensazione di spazio vasto
-- **Volume:** Uniforme, mai drammatico
-- **Formato output:** WAV 44.1kHz 24-bit
+- **Servizio:** ElevenLabs
+- **Modello:** Multilingual v3
+- **Voce:** Italiana Custom
 
 ## Tono
 
@@ -48,7 +43,7 @@ Calma, profonda, intima. Non clinica, non teatrale. Una voce che accompagna senz
 
 ---
 
-## Script — Atto 1: La Fucina
+## Script — Atto 1: Il Fuoco
 
 *[L'ambiente si materializza: incudine, braci, scintille.]*
 
@@ -70,7 +65,7 @@ Calma, profonda, intima. Non clinica, non teatrale. Una voce che accompagna senz
 
 ---
 
-## Script — Atto 1: La Porta
+## Script — Atto 1: La Porta (cont.)
 
 *[Buio. La porta emerge.]*
 
@@ -79,7 +74,7 @@ Calma, profonda, intima. Non clinica, non teatrale. Una voce che accompagna senz
 
 ---
 
-## Script — Atto 1: Il Mare
+## Script — Atto 2: L'Acqua
 
 *[Scoglio. Mare vasto, notte, stelle.]*
 
@@ -97,7 +92,7 @@ Calma, profonda, intima. Non clinica, non teatrale. Una voce che accompagna senz
 
 ---
 
-## Script — Atto 2: Silenzio Condiviso
+## Script — Atto 3: Silenzio Condiviso
 
 *[Mare calmo. La sagoma è seduta di fronte. Pausa (10s)]*
 
@@ -107,7 +102,7 @@ Calma, profonda, intima. Non clinica, non teatrale. Una voce che accompagna senz
 
 ---
 
-## Script — Atto 2: Le Parole
+## Script — Atto 3: Le Parole
 
 *[Le sfere-parola emergono intorno alla sagoma.]*
 
@@ -116,7 +111,7 @@ Calma, profonda, intima. Non clinica, non teatrale. Una voce che accompagna senz
 
 ---
 
-## Script — Atto 2: La Scelta
+## Script — Atto 3: La Scelta
 
 *[La sfera dorata appare sul grembo.]*
 
@@ -154,29 +149,11 @@ Calma, profonda, intima. Non clinica, non teatrale. Una voce che accompagna senz
 
 ---
 
-## Tempistiche
-
-| Sezione | N° battute | Durata voce | Durata totale |
-|---|---|---|---|
-| Prologo | 7 | ~15s | ~1 min |
-| Atto 1 — Fucina | 6 | ~15s | 3-5 min |
-| Atto 1 — Porta | 2 | ~5s | ~30s |
-| Atto 1 — Mare | 5 | ~15s | 3-5 min |
-| Atto 2 — Silenzio | 3 | ~5s | 1-3 min |
-| Atto 2 — Parole | 2 | ~5s | 2-5 min |
-| Atto 2 — Scelta | 3 | ~8s | 1-2 min |
-| Epilogo | 10 | ~32s | 3-5 min |
-| **Totale** | **38** | **~1m 40s** | **15-25 min** |
-
-**La voce parla solo per ~7% del tempo totale. Il 93% è silenzio, suoni ambientali e azione del giocatore.**
-
 ---
 
-## Regole di Delivery
+## Audio Esempio
 
-1. **Mai parlare durante l'azione** — la voce tace quando il giocatore martella, lancia, tocca
-2. **Mai ripetere** — ogni battuta si dice una volta sola
-3. **Mai giudicare** — nessun "bravo", "perfetto" (tranne "Bene" nel tutorial)
-4. **Mai descrivere le emozioni** — la voce non dice "sei triste". Il giocatore sente da sé
-5. **Pause > parole** — nel dubbio, più silenzio
-6. **Trigger basati su eventi** — ogni battuta è triggerata da un evento di gioco, mai random
+*Sezione per la riproduzione di campioni audio della voce narrante.*
+
+<!-- Inserire qui i file audio di esempio -->
+<!-- <audio controls><source src="audio/esempio_prologo.wav" type="audio/wav"></audio> -->

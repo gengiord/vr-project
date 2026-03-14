@@ -29,9 +29,9 @@ La **voce narrante** guida con frasi brevi e pause lunghe. Parla solo per ~7% de
 ## Struttura
 
 ```
-PROLOGO           ATTO 1                ATTO 2                      EPILOGO
-L'Ingresso        "Fuoco e Acqua"       "L'Incontro sul Mare"       "L'Alba"
-~1 min            5-8 min               5-10 min                     3-5 min
+PROLOGO       ATTO 1          ATTO 2          ATTO 3                    EPILOGO
+L'Ingresso    "Il Fuoco"      "L'Acqua"       "L'Incontro sul Mare"     "L'Alba"
+~1 min        3-5 min         3-5 min         5-10 min                   3-5 min
 ```
 
 ---
@@ -45,9 +45,9 @@ L'Ingresso        "Fuoco e Acqua"       "L'Incontro sul Mare"       "L'Alba"
 
 ---
 
-## Atto 1 — Fuoco e Acqua (5-8 min)
+## Atto 1 — Il Fuoco (3-5 min)
 
-*Tema: Affrontare il dolore — GGT: Orientamento alla Perdita (OP), elaborazione emotiva, meaning-making*
+*Tema: Affrontare la rabbia — GGT: Orientamento alla Perdita (OP), elaborazione emotiva, meaning-making*
 
 ### Fase 1.1 — La Fucina (Rabbia)
 - **Ambiente:** Caverna con incudine, braci, scintille. Blocco incandescente + martello.
@@ -59,7 +59,13 @@ L'Ingresso        "Fuoco e Acqua"       "L'Incontro sul Mare"       "L'Alba"
 - **Cosa succede:** Il giocatore inserisce la chiave e la gira. La porta si apre.
 - **Gesti:** Braccio avanti 30cm (snap magnetico) → wrist rotation 90°.
 
-### Fase 1.3 — Il Mare (Senso di colpa)
+---
+
+## Atto 2 — L'Acqua (3-5 min)
+
+*Tema: Affrontare il senso di colpa — GGT: Orientamento alla Perdita (OP), meaning-making, anticipazione del CB*
+
+### Fase 2.1 — Il Mare (Senso di colpa)
 - **Ambiente:** Scoglio su mare vasto e calmo, notte stellata. 6-10 pietre scure con frasi di colpa fluttuano davanti al petto.
 - **Cosa succede:** Il giocatore lancia le pietre nel mare, una alla volta. Ad ogni lancio: splash, onda luminosa, acqua più chiara. Dal primo lancio, una sagoma dorata seduta su una sedia appare in lontananza e si avvicina ad ogni lancio.
 - **Meccanica chiave:** Più pietre lanci → più la figura si avvicina.
@@ -67,19 +73,19 @@ L'Ingresso        "Fuoco e Acqua"       "L'Incontro sul Mare"       "L'Alba"
 
 ---
 
-## Atto 2 — L'Incontro sul Mare (5-10 min)
+## Atto 3 — L'Incontro sul Mare (5-10 min)
 
 *Tema: Dialogo e connessione — GGT: Continuing Bonds (da esternalizzato a internalizzato), oscillazione OP/OR*
 
-### Fase 2.1 — Il Silenzio Condiviso
+### Fase 3.1 — Il Silenzio Condiviso
 Mare calmo e luminoso. Sagoma a 2m. Due figure faccia a faccia. 10-15s di silenzio.
 - **GGT:** CB esternalizzato — presenza visiva del defunto, Senso di Presenza (SED) positivo.
 
-### Fase 2.2 — Le Parole
+### Fase 3.2 — Le Parole
 Sfere-parola fluttuano: "Grazie", "Mi manchi", "Ti perdono", "Perdonami", "Vai in pace", "Ti voglio bene". Il giocatore tocca quelle che vuole (o nessuna). Nessun timer.
 - **GGT:** CB in trasformazione — dal legame visivo al dialogo interiore. Le parole scelte diventano parte del legame internalizzato.
 
-### Fase 2.3 — La Scelta di Proseguire
+### Fase 3.3 — La Scelta di Proseguire
 Una sfera dorata appare in grembo. Se il giocatore la prende e alza, la sagoma si dissolve — braccia aperte, particelle, riflessi sull'acqua. Resta un punto di luce.
 - **GGT:** Metafora dello *Scrigno interno* — custodire l'essenza del legame. La dissoluzione della sagoma in luce è il *Distillato* — l'essenza più pura del defunto diventa risorsa interna attiva.
 

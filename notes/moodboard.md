@@ -13,14 +13,21 @@ Buio quasi totale. Luce dorata tenue dalle mani. Acqua nera.
 - Oro tenue `#d4a857`
 - Luce mani `#f5e6c8`
 
-### Atto 1 — Fuoco e Acqua
-Calore della fucina. Rosso-arancio incandescente. Scintille dorate. Mare notturno.
+### Atto 1 — Il Fuoco
+Calore della fucina. Rosso-arancio incandescente. Scintille dorate.
 - Brace `#8b2500`
 - Fuoco `#d4500a`
 - Scintille `#f5a623`
-- Mare notte `#0d1b2a`
+- Caverna `#1a0f0a`
 
-### Atto 2 — L'Incontro sul Mare
+### Atto 2 — L'Acqua
+Mare notturno. Blu profondo. Pietre scure. Splash luminosi.
+- Mare notte `#0d1b2a`
+- Acqua profonda `#1a3a5c`
+- Splash `#7ec8e3`
+- Pietre `#2a2a3e`
+
+### Atto 3 — L'Incontro sul Mare
 Mare calmo e luminoso. Sagoma dorata. Sfere cristalline. Intimità stellata.
 - Cielo notte `#1b2838`
 - Mare calmo `#3a6b8c`
@@ -33,19 +40,6 @@ Alba dal mare. Viola, rosa, oro pieno. Gabbiani. Luce che invade tutto.
 - Rosa `#e8788a`
 - Arancione `#f5a623`
 - Oro pieno `#ffd700`
-
----
-
-## Progressione Emotiva
-
-| Fase | Emozione | Luce | Suono | Colore dominante |
-|---|---|---|---|---|
-| Prologo | Solitudine, vulnerabilità | Minima, solo mani | Silenzio, battito | Nero + oro tenue |
-| Fucina | Rabbia, potenza | Calda, intensa | Drone, martellate | Rosso-arancio |
-| Porta | Mistero, soglia | Puntuale, serratura | Silenzio teso | Nero + oro |
-| Mare (pietre) | Peso, rilascio | Crescente dal mare | Archi, splash | Blu notte + azzurro |
-| Incontro | Intimità, pace | Sagoma dorata | Melodia emotiva | Blu + oro caldo |
-| Alba | Rinascita, speranza | Piena, invade tutto | Crescendo, mare | Viola → oro pieno |
 
 ---
 

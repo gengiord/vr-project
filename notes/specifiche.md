@@ -53,11 +53,11 @@ Tutti i gesti sono equivalenti a movimenti quotidiani da seduti. Escursione mass
 
 | Pilastro GGT | Dove nel progetto | Come si traduce |
 |---|---|---|
-| **DPM — Orientamento alla Perdita (OP)** | Atto 1 (Fucina + Pietre) | Confronto con rabbia (martellare), elaborazione del senso di colpa (lanciare pietre) |
+| **DPM — Orientamento alla Perdita (OP)** | Atto 1 (Fuoco) + Atto 2 (Acqua) | Confronto con rabbia (martellare), elaborazione del senso di colpa (lanciare pietre) |
 | **DPM — Orientamento alla Ricostruzione (OR)** | Epilogo (Alba) | Gesti creativi, mani che trasformano il mondo, nuova luce |
-| **DPM — Oscillazione OP/OR** | Arco complessivo | Atto 1 (OP) → Atto 2 (oscillazione) → Epilogo (OR) |
-| **Continuing Bonds — Esternalizzato** | Atto 2 (Sagoma dorata) | Presenza visiva del defunto, vicinanza fisica, silenzio condiviso |
-| **Continuing Bonds — Internalizzazione** | Atto 2 → Epilogo | Sfere-parola (dialogo), sfera dorata (“Scrigno”), dissoluzione in luce (“Distillato”) |
+| **DPM — Oscillazione OP/OR** | Arco complessivo | Atto 1-2 (OP) → Atto 3 (oscillazione) → Epilogo (OR) |
+| **Continuing Bonds — Esternalizzato** | Atto 3 (Sagoma dorata) | Presenza visiva del defunto, vicinanza fisica, silenzio condiviso |
+| **Continuing Bonds — Internalizzazione** | Atto 3 → Epilogo | Sfere-parola (dialogo), sfera dorata ("Scrigno"), dissoluzione in luce ("Distillato") |
 | **PTG — Forza personale** | Atto 1 + Epilogo | Dalla rabbia nasce la chiave; le mani brillano della stessa luce |
 | **PTG — Nuove possibilità** | Epilogo | Gesti creativi che generano stelle, onde, gabbiani |
 | **PTG — Apprezzamento della vita** | Epilogo | L'alba come rinascita, “Il viaggio continua” |
@@ -69,9 +69,9 @@ Tutti i gesti sono equivalenti a movimenti quotidiani da seduti. Escursione mass
 
 | Metafora GGT | Elemento VR | Funzione |
 |---|---|---|
-| **Scrigno interno** | Sfera dorata in grembo (Atto 2) | Custodire l'essenza del legame |
+| **Scrigno interno** | Sfera dorata in grembo (Atto 3) | Custodire l'essenza del legame |
 | **Distillato** | Sagoma → punto di luce → alba | L'essenza più pura del defunto diventa risorsa interna |
-| **Due cantieri** | Alternanza Fucina/Pietre ↔ Alba | Oscillazione OP/OR resa narrativamente |
+| **Due cantieri** | Alternanza Atto 1-2 (OP) ↔ Epilogo (OR) | Oscillazione OP/OR resa narrativamente |
 | **Finestra di Tolleranza** | Comfort zone mani (60×60cm, seduti) | Regolazione intensità emotiva tramite design fisico |
 
 ### Posizionamento: Death Education

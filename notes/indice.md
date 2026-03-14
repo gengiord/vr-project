@@ -22,7 +22,7 @@ Contestualizzazione del tema, motivazione personale, domanda di ricerca e presen
   - Who? — Candidato, relatore, collaboratori, destinatari
   - How? — Framework teorico, tecnologia, interazione, metodologia
   - Where? — Piattaforma, distribuzione, documentazione
-  - When? — Sessione di laurea, timeline produzione
+  - When? — Timeline di produzione
 - **Domanda di ricerca**
 - **Struttura della tesi**
 
@@ -86,10 +86,9 @@ Capitolo dedicato interamente alla progettazione dell'esperienza VR. Il GDD è i
 - Design for emotion: come progettare per le emozioni
 
 ### 2.4 Struttura dell'esperienza
-- Struttura dei livelli / dell'esperienza
+- Prologo, Atto 1 (Il Fuoco), Atto 2 (L'Acqua), Atto 3 (L'Incontro sul Mare), Epilogo (L'Alba)
 - Flow: onboarding → esperienza principale → conclusione
 - Navigazione (lineare vs non lineare)
-- Progressione emotiva dell'esperienza
 
 ### 2.5 Narrativa e storytelling
 - Trama e personaggi (se presenti)
@@ -116,31 +115,37 @@ Capitolo principale della tesi. Documentazione tecnica e pratica dell'intero pro
 - **3.2.1** Unity + Meta XR All-In-One SDK — Configurazione progetto, setup hand tracking, architettura
 - **3.2.2** Pipeline di sviluppo — Workflow asset (modelli 3D, texture, audio), version control
 
-### 3.3 Sviluppo degli ambienti
-- **3.3.1** Creazione degli ambienti 3D — Modellazione, sculpting, materiali, texture, illuminazione
-- **3.3.2** Environment e atmosfera — Cielo, particelle, effetti volumetrici, transizioni
+### 3.3 Strumenti AI nel progetto
+- **3.3.1** Claude Code — Gestione del progetto, sviluppo codice, documentazione
+- **3.3.2** Gemini — Creazione storyboard e asset immagini (concept art)
+- **3.3.3** ElevenLabs — Generazione voci, effetti sonori e musica
+- **3.3.4** Meshy AI — Creazione modelli 3D
 
-### 3.4 Implementazione delle meccaniche
-- **3.4.1** Sistema di hand tracking — Gesture recognition, feedback visivo e aptico, gestione grab/poke/pinch
-- **3.4.2** Meccaniche di gameplay — Implementazione tecniche GGT, interazioni con oggetti, progressione e trigger narrativi
-- **3.4.3** Navigazione e locomotion — Sistema di movimento, comfort e motion sickness
+### 3.4 Sviluppo degli ambienti
+- **3.4.1** Creazione degli ambienti 3D — Modellazione, sculpting, materiali, texture, illuminazione
+- **3.4.2** Environment e atmosfera — Cielo, particelle, effetti volumetrici, transizioni
 
-### 3.5 Comparto audio
-- **3.5.1** Musica e colonna sonora — Selezione e/o creazione tracce, audio adattivo e dinamico
-- **3.5.2** Sound design — Effetti sonori ambientali e di interazione, spatial audio
-- **3.5.3** Voce — Narrazione, dialoghi, indicazioni
+### 3.5 Implementazione delle meccaniche
+- **3.5.1** Sistema di hand tracking — Gesture recognition, feedback visivo e aptico, gestione grab/poke/pinch
+- **3.5.2** Meccaniche di gameplay — Implementazione tecniche GGT, interazioni con oggetti, progressione e trigger narrativi
+- **3.5.3** Navigazione e locomotion — Sistema di movimento, comfort e motion sickness
 
-### 3.6 Effetti visivi
+### 3.6 Comparto audio
+- **3.6.1** Musica e colonna sonora — Selezione e/o creazione tracce, audio adattivo e dinamico
+- **3.6.2** Sound design — Effetti sonori ambientali e di interazione, spatial audio
+- **3.6.3** Voce — Narrazione, dialoghi, indicazioni
+
+### 3.7 Effetti visivi
 - Effetti particellari (per sezione/livello)
 - Effetti volumetrici (fumo, nebbia, luce divina)
 - Shader e post-processing
 
-### 3.7 Testing e iterazioni
-- **3.7.1** Playtest — Sessioni di test, feedback raccolti, iterazioni
-- **3.7.2** Ottimizzazione — Performance su Meta Quest, draw call, texture, poligoni
-- **3.7.3** Bug fix e polish finale
+### 3.8 Testing e iterazioni
+- **3.8.1** Playtest — Sessioni di test, feedback raccolti, iterazioni
+- **3.8.2** Ottimizzazione — Performance su Meta Quest, draw call, texture, poligoni
+- **3.8.3** Bug fix e polish finale
 
-### 3.8 Build e distribuzione
+### 3.9 Build e distribuzione
 - Esportazione per Meta Quest
 - Piattaforma di distribuzione (da definire)
 - Documentazione visiva: screenshot, video, materiali per tesi

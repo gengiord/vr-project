@@ -1,4 +1,4 @@
-# Storyboard — "Il Viaggio" v5
+# Storyboard — "Il Viaggio"
 
 20 frame — testo e concept art
 
@@ -30,8 +30,8 @@ Il buio si apre. All'orizzonte dell'acqua nera, una luce arancione intensa e cal
 
 ---
 
-## ATTO 1 — Fuoco e Acqua
-*GGT: Orientamento alla Perdita (OP) — confronto con rabbia e senso di colpa, meaning-making*
+## ATTO 1 — Il Fuoco
+*GGT: Orientamento alla Perdita (OP) — confronto con la rabbia, meaning-making*
 
 ### Frame 04 — La Fucina: l'ambiente
 Il giocatore è seduto davanti a un tavolo da fabbro in una caverna sotterranea. Braci ardenti, scintille nell'aria. Sull'incudine un blocco incandescente rosso-arancio, informe e pulsante. A destra, un martello.
@@ -61,6 +61,11 @@ Buio totale. Una grande porta di pietra scura emerge dal nulla con una serratura
 > "Una porta. Non tutte si aprono con la forza." — "Usa quello che hai forgiato."
 
 **Mood:** Mistero · Soglia · Passaggio
+
+---
+
+## ATTO 2 — L'Acqua
+*GGT: Orientamento alla Perdita (OP) — confronto con il senso di colpa, meaning-making, anticipazione del CB*
 
 ### Frame 08 — Il Mare: le pietre fluttuanti
 Il giocatore è seduto su uno scoglio, sulla riva di un mare vasto e calmo, di notte. Cielo stellato immenso. Davanti a lui, 6 pietre scure con frasi incise in luce fluttuano in semicerchio. L'orizzonte è infinito, vuoto.
@@ -93,7 +98,7 @@ Il mare è più luminoso. La sagoma dorata è ora chiaramente visibile — una f
 
 ---
 
-## ATTO 2 — L'Incontro sul Mare
+## ATTO 3 — L'Incontro sul Mare
 *GGT: Continuing Bonds (da esternalizzato a internalizzato), oscillazione OP/OR*
 
 ### Frame 12 — Il Silenzio condiviso
