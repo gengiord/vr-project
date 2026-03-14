@@ -59,6 +59,19 @@ Alba dal mare. Viola, rosa, oro pieno. Gabbiani. Luce che invade tutto.
 
 ---
 
+## Ambienti
+
+| Ambiente | Seduto su... | Oggetti zona mani |
+|---|---|---|
+| Prologo | Vuoto (sedia reale) | 3 sfere tutorial |
+| Fucina | Roccia bassa | Incudine, martello, blocco |
+| Porta | Buio | Chiave, porta |
+| Mare — Pietre | Scoglio | Pietre fluttuanti |
+| Mare — Incontro | Scoglio | Sfere-parola + sfera dorata |
+| Alba | Scoglio | Nulla (mani = strumento) |
+
+---
+
 ## Reference Visivi
 
 *Sezione in costruzione — Qui verranno inserite immagini di riferimento, screenshot di giochi ispiratori (Journey, Gris, Abzu, Sea of Solitude), concept art aggiuntivi e moodboard visivi per ogni atto dell'esperienza.*

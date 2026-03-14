@@ -16,7 +16,7 @@
     --text-light: #adb5bd;
     --accent: #2b2d42;
     --accent-light: #8d99ae;
-    --accent-color: #d4a857;
+    --accent-color: #5b7fb5;
     --red: #c9184a;
     --blue: #3a86ff;
     --shadow: rgba(0, 0, 0, 0.04);
@@ -119,17 +119,17 @@ nav {
 }
 
 .page-header h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.02em;
     color: var(--text);
-    margin-bottom: 0.4rem;
+    margin-bottom: 0;
 }
 
 .page-header .subtitle {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--text-muted);
-    font-weight: 400;
+    margin-top: 0.5rem;
 }
 
 /* ========== TESI PAGE ========== */
@@ -919,20 +919,21 @@ pre {
 
 .dashboard-hero {
     text-align: left;
-    padding: 3rem 0 2rem;
-    margin-bottom: 2rem;
+    padding: 2rem 0 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-light);
 }
 
 .dashboard-hero h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: -0.02em;
     color: var(--text);
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.4rem;
 }
 
 .dashboard-hero p {
-    font-size: 1rem;
+    font-size: 0.88rem;
     color: var(--text-muted);
     max-width: 600px;
     line-height: 1.6;
@@ -949,19 +950,21 @@ pre {
     background: var(--bg-paper);
     border: 1px solid var(--border-light);
     border-radius: var(--radius);
-    padding: 1.5rem;
+    padding: 1.2rem 1.4rem;
     text-decoration: none;
     color: var(--text);
     transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
+    gap: 0.2rem;
+    border-left: 3px solid var(--accent-color);
 }
 
 .dash-card:hover {
-    border-color: var(--accent-color);
-    box-shadow: 0 4px 16px var(--shadow-strong);
-    transform: translateY(-2px);
+    border-color: var(--border);
+    border-left-color: var(--accent);
+    box-shadow: 0 4px 12px var(--shadow-strong);
+    transform: translateY(-1px);
 }
 
 .dash-card .dash-label {
@@ -973,14 +976,14 @@ pre {
 }
 
 .dash-card h3 {
-    font-size: 1rem;
+    font-size: 0.92rem;
     font-weight: 700;
     color: var(--text);
     margin: 0;
 }
 
 .dash-card p {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: var(--text-muted);
     line-height: 1.5;
 }
@@ -1169,12 +1172,14 @@ pre {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
+    border-left: 3px solid var(--accent-color);
 }
 
 .mini-dash-card:hover {
-    border-color: var(--accent-color);
+    border-color: var(--border);
+    border-left-color: var(--accent);
     box-shadow: 0 4px 12px var(--shadow-strong);
-    transform: translateY(-2px);
+    transform: translateY(-1px);
 }
 
 .mini-dash-card h3 {
@@ -1285,6 +1290,201 @@ pre {
     font-style: italic;
 }
 
+/* ========== HORIZONTAL TIMELINE (Storia) ========== */
+.htl {
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    padding: 1rem 0 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.htl::before {
+    content: '';
+    position: absolute;
+    top: 1.6rem;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--border);
+}
+
+.htl-item {
+    flex: 1 0 0;
+    min-width: 140px;
+    text-align: center;
+    position: relative;
+    padding-top: 2.5rem;
+}
+
+.htl-item::before {
+    content: '';
+    position: absolute;
+    top: 1.1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    border: 2px solid var(--bg);
+    box-shadow: 0 0 0 2px var(--accent-color);
+    z-index: 1;
+}
+
+.htl-item .htl-label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent-color);
+    margin-bottom: 0.15rem;
+}
+
+.htl-item .htl-name {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.1rem;
+}
+
+.htl-item .htl-dur {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+}
+
+/* ========== STORY CARD (improved) ========== */
+.story-card {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background: var(--bg-paper);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius);
+    border-left: 3px solid var(--accent-color);
+    transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.story-card:hover {
+    border-color: var(--border);
+    border-left-color: var(--accent);
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+.story-card .story-tag {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-color);
+    margin-bottom: 0.4rem;
+}
+
+.story-card h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.6rem;
+}
+
+.story-card h3 {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-top: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.story-card p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 0.4rem;
+}
+
+/* ========== TIMELINE CARD (improved) ========== */
+.tl-phase {
+    margin-bottom: 2.5rem;
+}
+
+.tl-phase-header {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.tl-card {
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 1rem;
+    padding: 1.2rem 1.4rem;
+    background: var(--bg-paper);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius);
+    transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.tl-card:hover {
+    border-color: var(--border);
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+.tl-card .tl-week {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: var(--radius-sm);
+    background: var(--bg-subtle);
+    border: 1px solid var(--border-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.62rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+    line-height: 1.2;
+}
+
+.tl-card .tl-week span {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.tl-card .tl-body { flex: 1; }
+
+.tl-card .tl-title {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.2rem;
+}
+
+.tl-card .tl-desc {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* ========== SECTION HEADER (dashboard) ========== */
+.section-header {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    margin-bottom: 0.8rem;
+}
+
 /* ========== FOOTER ========== */
 .site-footer {
     text-align: center;
@@ -1311,11 +1511,15 @@ pre {
     .nav-sub { overflow-x: auto; flex-wrap: nowrap; }
     .page-header h1 { font-size: 1.3rem; }
     .tesi-hero h1 { font-size: 1.1rem; }
-    .dashboard-hero h1 { font-size: 1.4rem; }
+    .dashboard-hero h1 { font-size: 1.3rem; }
     .spec-item { flex-direction: column; }
     .spec-item strong { min-width: auto; }
     .mini-dash { grid-template-columns: 1fr; }
     .team-grid { grid-template-columns: 1fr; }
     .section-card .spec-item { flex-direction: column; }
     .section-card .spec-item strong { min-width: auto; }
+    .htl { overflow-x: auto; gap: 0; }
+    .htl-item { min-width: 110px; }
+    .tl-card { flex-direction: column; gap: 0.8rem; }
+    .tl-card .tl-week { width: auto; height: auto; flex-direction: row; gap: 0.3rem; padding: 0.4rem 0.8rem; }
 }

@@ -1,4 +1,4 @@
-# Il Progetto — Info Generali
+# "Il Viaggio" — Game Design
 
 Esperienza VR psico-educativa sull'elaborazione del lutto
 
@@ -6,6 +6,7 @@ Esperienza VR psico-educativa sull'elaborazione del lutto
 
 ## Informazioni Generali
 
+- **Nome progetto:** Il Viaggio (titolo provvisorio)
 - **Tipo:** Esperienza VR psico-educativa sull'elaborazione del lutto (Death Education, livello primario)
 - **Framework teorico:** Grief and Growth Therapy — GGT (De Luca, 2024)
 - **Piattaforma:** Meta Quest (standalone)
@@ -27,10 +28,11 @@ La **voce narrante** guida con frasi brevi e pause lunghe. Parla solo per ~7% de
 
 ## Sub-pagine del Progetto
 
-- **Storia** — Struttura narrativa: Prologo, 3 Atti, Epilogo. Ambienti, meccaniche e GGT.
-- **Specifiche Tecniche** — Software, SDK, strumenti AI, gesture e audio.
-- **Moodboard** — Stile visivo, palette colori per atto e reference.
+- **Storia** — Struttura narrativa: Prologo, 3 Atti, Epilogo.
+- **Specifiche Tecniche** — Software, SDK e strumenti AI.
+- **Gameplay** — Gesture, interazioni e meccaniche di gioco.
+- **Moodboard** — Stile visivo, palette colori, ambienti e reference.
 - **Storyboard** — 20 frame con testo, concept art e galleria.
 - **Audio** — Voce narrante, musica e SFX.
-- **References** — Progetti VR ispiratori e fonti artistiche.
+- **Reference** — Progetti VR ispiratori e fonti artistiche.
 - **Timeline** — Pianificazione su 12 settimane.

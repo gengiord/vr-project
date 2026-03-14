@@ -1,4 +1,6 @@
-# References
+# Reference
+
+> Nota: Il file HTML è stato rinominato da `references.html` a `reference.html`.
 
 Fonti ispiratrici e progetti di riferimento
 
