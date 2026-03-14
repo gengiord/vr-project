@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progetto — Tesi Magistrale</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-main">
+        <a href="tesi.html">Tesi</a>
+        <a href="progetto.html" class="active">Progetto</a>
+    </div>
+    <div class="nav-sub">
+        <a href="progetto.html" class="active">Info Generali</a>
+        <a href="specifiche.html">Specifiche Tecniche</a>
+        <a href="moodboard.html">Moodboard</a>
+        <a href="storyboard.html">Storyboard</a>
+        <a href="voce-narrante.html">Voce Narrante</a>
+        <a href="gallery.html">Galleria</a>
+    </div>
+</nav>
+
+<div class="page">
+
+    <div class="page-header">
+        <h1>Il Progetto</h1>
+        <div class="subtitle">Esperienza VR psico-educativa sull'elaborazione del lutto</div>
+    </div>
+
+    <div class="spec-block">
+        <h2>Informazioni Generali</h2>
+        <div class="spec-item"><strong>Tipo</strong> Esperienza VR psico-educativa sull'elaborazione del lutto</div>
+        <div class="spec-item"><strong>Framework teorico</strong> Grief and Growth Therapy (GGT)</div>
+        <div class="spec-item"><strong>Piattaforma</strong> Meta Quest (standalone)</div>
+        <div class="spec-item"><strong>Tecnologia</strong> Unity + Meta XR All-In-One SDK</div>
+        <div class="spec-item"><strong>Interazione</strong> Hand tracking (no controller), da seduti</div>
+        <div class="spec-item"><strong>Voce narrante</strong> ElevenLabs TTS — voce calma, profonda, intima</div>
+        <div class="spec-item"><strong>Durata stimata</strong> 15-25 minuti</div>
+        <div class="spec-item"><strong>Personalizzazione</strong> Nessuna richiesta</div>
+    </div>
+
+    <div class="spec-block">
+        <h2>Principio di Design</h2>
+        <p>Tutto avviene nella <strong>comfort zone del hand tracking da seduti</strong>: ~60×60cm davanti al busto, tra vita e spalle. Il mondo arriva al giocatore, non il contrario. Gli oggetti fluttuano nella zona di comfort. Il giocatore è il centro immobile dell'esperienza.</p>
+        <p>La <strong>voce narrante</strong> guida con frasi brevi e pause lunghe. Parla solo per ~7% del tempo totale (~1m 40s su 15-25 min). Il resto è silenzio, suoni ambientali e azione del giocatore.</p>
+    </div>
+
+    <div class="spec-block">
+        <h2>Struttura</h2>
+        <pre>
+PROLOGO           ATTO 1                ATTO 2                      EPILOGO
+L'Ingresso        "Fuoco e Acqua"       "L'Incontro sul Mare"       "L'Alba"
+~1 min            5-8 min               5-10 min                     3-5 min</pre>
+    </div>
+
+    <div class="spec-block">
+        <h2>Prologo — L'Ingresso (~1 min)</h2>
+        <p><strong>Ambiente:</strong> Buio totale. Mani luminose. Pavimento d'acqua scura.</p>
+        <p><strong>Cosa succede:</strong> Tutorial guidato dalla voce narrante. 3 sfere insegnano i gesti base: tap, grab+release, throw.</p>
+        <p><strong>Transizione:</strong> Luce arancione in lontananza → dissolvenza.</p>
+    </div>
+
+    <div class="spec-block">
+        <h2>Atto 1 — Fuoco e Acqua (5-8 min)</h2>
+        <p><em>Tema: Affrontare il dolore — GGT: Rabbia/colpa, Accoglienza, Corpo</em></p>
+
+        <h3 style="margin-top:1rem; font-size:0.88rem;">Fase 1.1 — La Fucina (Rabbia)</h3>
+        <p><strong>Ambiente:</strong> Caverna con incudine, braci, scintille. Blocco incandescente + martello.</p>
+        <p><strong>Cosa succede:</strong> Il giocatore martella il blocco (8-15 colpi). Il blocco si spacca e rivela una chiave. La voce guida l'inizio, poi tace durante i colpi.</p>
+        <p><strong>Gesti:</strong> Grab martello → colpire dall'alto (20-30cm escursione) → grab chiave.</p>
+
+        <h3 style="margin-top:1rem; font-size:0.88rem;">Fase 1.2 — La Porta</h3>
+        <p><strong>Ambiente:</strong> Buio. Una porta di pietra con serratura luminosa.</p>
+        <p><strong>Cosa succede:</strong> Il giocatore inserisce la chiave e la gira. La porta si apre.</p>
+        <p><strong>Gesti:</strong> Braccio avanti 30cm (snap magnetico) → wrist rotation 90°.</p>
+
+        <h3 style="margin-top:1rem; font-size:0.88rem;">Fase 1.3 — Il Mare (Senso di colpa)</h3>
+        <p><strong>Ambiente:</strong> Scoglio su mare vasto e calmo, notte stellata. 6-10 pietre scure con frasi di colpa fluttuano davanti al petto.</p>
+        <p><strong>Cosa succede:</strong> Il giocatore lancia le pietre nel mare, una alla volta. Ad ogni lancio: splash, onda luminosa, acqua più chiara. Dal primo lancio, una sagoma dorata seduta su una sedia appare in lontananza e si avvicina ad ogni lancio.</p>
+        <p><strong>Meccanica chiave:</strong> Più pietre lanci → più la figura si avvicina.</p>
+    </div>
+
+    <div class="spec-block">
+        <h2>Atto 2 — L'Incontro sul Mare (5-10 min)</h2>
+        <p><em>Tema: Dialogo e connessione — GGT: Sedia vuota, Continuing bonds, Significato</em></p>
+
+        <h3 style="margin-top:1rem; font-size:0.88rem;">Fase 2.1 — Il Silenzio Condiviso</h3>
+        <p>Mare calmo e luminoso. Sagoma a 2m. Due figure faccia a faccia. 10-15s di silenzio.</p>
+
+        <h3 style="margin-top:1rem; font-size:0.88rem;">Fase 2.2 — Le Parole</h3>
+        <p>Sfere-parola fluttuano: "Grazie", "Mi manchi", "Ti perdono", "Perdonami", "Vai in pace", "Ti voglio bene". Il giocatore tocca quelle che vuole (o nessuna). Nessun timer.</p>
+
+        <h3 style="margin-top:1rem; font-size:0.88rem;">Fase 2.3 — La Scelta di Proseguire</h3>
+        <p>Una sfera dorata appare in grembo. Se il giocatore la prende e alza, la sagoma si dissolve — braccia aperte, particelle, riflessi sull'acqua. Resta un punto di luce.</p>
+    </div>
+
+    <div class="spec-block">
+        <h2>Epilogo — L'Alba sul Mare (3-5 min)</h2>
+        <p><em>Tema: Rinascere — GGT: Nuovo sé, Post-traumatic growth, Ridecisione</em></p>
+        <p>L'alba nasce dal punto dove sedeva la figura. Le mani del giocatore brillano della stessa luce. Gesti creativi liberi: palms up → stelle, push → onda di luce, finger wiggle → gabbiani, hands together → luce-cuore.</p>
+        <p>Dissolvenza al bianco → titolo → nero.</p>
+    </div>
+
+</div>
+
+<footer class="site-footer">
+    <strong>Gennaro Giordano</strong> — Tesi di Laurea Magistrale<br>
+    Multimedia (Design della Comunicazione) — A.A. 2025/2026<br>
+    Relatore: Prof. Corrado Piscitelli
+</footer>
+
+</body>
+</html>
