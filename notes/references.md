@@ -30,10 +30,10 @@ Opera fondamentale che introduce il modello a cinque fasi del lutto (negazione, 
 
 **Rilevanza per il progetto:** Struttura emotiva dell'esperienza, progressione naturale del percorso.
 
-### Wagner, John — Grief and Growth Therapy (2019)
-Framework terapeutico che integra l'Analisi Transazionale con l'elaborazione del lutto. Si concentra su come la perdita possa portare a crescita personale e trasformazione.
+### De Luca, Maria Luisa — Psicoterapia per il lutto. La Grief and Growth Therapy (2024)
+Modello integrativo che combina quattro pilastri — Modello Duale del Lutto (Stroebe & Schut), Continuing Bonds (Klass), Crescita Post Traumatica (Tedeschi & Calhoun) e ricerca di senso (Neimeyer, Frankl) — all'interno di una cornice di Analisi Transazionale. Si concentra su come la perdita possa portare a crescita personale e trasformazione attraverso l'oscillazione adattiva tra orientamento alla perdita e alla ricostruzione, e la trasformazione del legame con il defunto.
 
-**Rilevanza per il progetto:** Framework teorico principale, mappatura delle tecniche VR.
+**Rilevanza per il progetto:** Framework teorico principale. I quattro pilastri della GGT mappano direttamente sull'arco narrativo dell'esperienza VR. Le metafore terapeutiche (Scrigno interno, Distillato) ispirano il design simbolico.
 
 ### Stroebe, Margaret & Schut, Henk — The Dual Process Model (1999)
 Modello che descrive l'oscillazione tra "loss-oriented" e "restoration-oriented" coping nell'elaborazione del lutto. Spiega perché le persone alternano momenti di tristezza con momenti di distrazione.

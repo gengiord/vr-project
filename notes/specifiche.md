@@ -49,15 +49,33 @@ Tutti i gesti sono equivalenti a movimenti quotidiani da seduti. Escursione mass
 
 ---
 
-## Copertura GGT
+## Copertura GGT — I Quattro Pilastri (De Luca, 2024)
 
-| Area GGT | Dove | Come |
+| Pilastro GGT | Dove nel progetto | Come si traduce |
 |---|---|---|
-| 2.1 Accoglienza dolore | Atto 1 | Fucina: spazio per la rabbia |
-| 2.2 Esplorazione relazione | Atto 2 | Incontro sul mare + sfere-parola |
-| 2.3 Emozioni e corpo | Atto 1 + Epilogo | Martellare, lanciare, gesti creativi |
-| 2.4 Revisione copione | Epilogo | Alba dal punto del defunto |
-| 2.5 Ricerca significato | Tutti | Rabbia→chiave, colpa→incontro |
-| 2.6 Ricostruzione | Epilogo | L'alba nasce dove sedeva la figura |
+| **DPM — Orientamento alla Perdita (OP)** | Atto 1 (Fucina + Pietre) | Confronto con rabbia (martellare), elaborazione del senso di colpa (lanciare pietre) |
+| **DPM — Orientamento alla Ricostruzione (OR)** | Epilogo (Alba) | Gesti creativi, mani che trasformano il mondo, nuova luce |
+| **DPM — Oscillazione OP/OR** | Arco complessivo | Atto 1 (OP) → Atto 2 (oscillazione) → Epilogo (OR) |
+| **Continuing Bonds — Esternalizzato** | Atto 2 (Sagoma dorata) | Presenza visiva del defunto, vicinanza fisica, silenzio condiviso |
+| **Continuing Bonds — Internalizzazione** | Atto 2 → Epilogo | Sfere-parola (dialogo), sfera dorata (“Scrigno”), dissoluzione in luce (“Distillato”) |
+| **PTG — Forza personale** | Atto 1 + Epilogo | Dalla rabbia nasce la chiave; le mani brillano della stessa luce |
+| **PTG — Nuove possibilità** | Epilogo | Gesti creativi che generano stelle, onde, gabbiani |
+| **PTG — Apprezzamento della vita** | Epilogo | L'alba come rinascita, “Il viaggio continua” |
+| **PTG — Cambiamento spirituale** | Epilogo | “Sei parte di qualcosa di più grande. Sempre.” |
+| **PTG — Relazione con gli altri** | Epilogo | “Ma non sei più solo” |
+| **Meaning-Making** | Tutti | Rabbia→chiave (senso nella sofferenza), colpa→incontro (rilascio→connessione), alba dal punto del defunto (trasformazione→significato) |
 
-**Copertura: 6/6 aree, 5/10 tecniche**
+### Metafore GGT nel design
+
+| Metafora GGT | Elemento VR | Funzione |
+|---|---|---|
+| **Scrigno interno** | Sfera dorata in grembo (Atto 2) | Custodire l'essenza del legame |
+| **Distillato** | Sagoma → punto di luce → alba | L'essenza più pura del defunto diventa risorsa interna |
+| **Due cantieri** | Alternanza Fucina/Pietre ↔ Alba | Oscillazione OP/OR resa narrativamente |
+| **Finestra di Tolleranza** | Comfort zone mani (60×60cm, seduti) | Regolazione intensità emotiva tramite design fisico |
+
+### Posizionamento: Death Education
+
+Il progetto si colloca al **livello primario** della Death Education (De Luca, 2024): sensibilizzazione alla finitudine, esplorazione dei propositi di vita, promozione della consapevolezza esistenziale. **Non è terapia**, ma esperienza psico-educativa.
+
+**Copertura: 4/4 pilastri GGT, 5/5 dimensioni PTG, 4/4 metafore chiave**

@@ -4,18 +4,29 @@
 
 ---
 
-## Capitolo 1 — Psicologia del lutto (10 fonti)
+## Capitolo 1 — Lutto, tecnologia e nuovi strumenti (16 fonti)
 
+### GGT e pilastri teorici
+- De Luca Maria Luisa, *Psicoterapia per il lutto. La Grief and Growth Therapy*, Alpes Italia, Roma, 2024.
+- Stroebe Margaret, Schut Henk, *The Dual Process Model of Coping with Bereavement: Rationale and Description*, in «Death Studies», vol. 23, n. 3, 1999, pp. 197-224.
+- Stroebe Margaret, Schut Henk, *The Dual Process Model of Coping with Bereavement: A Decade On*, in «Omega: Journal of Death and Dying», vol. 61, n. 4, 2010, pp. 273-289.
+- Klass Dennis, Silverman Phyllis R., Nickman Steven, *Continuing Bonds: New Understandings of Grief*, Taylor & Francis, Washington, 1996.
+- Klass Dennis, *Continuing Bonds in Bereavement: New Directions for Research and Practice*, Routledge, Londra, 2022.
+- Tedeschi Richard G., Calhoun Lawrence G., *Posttraumatic Growth: Conceptual Foundations and Empirical Evidence*, in «Psychological Inquiry», vol. 15, n. 1, 2004, pp. 1-18.
+- Neimeyer Robert A., *Meaning Reconstruction and the Experience of Loss*, American Psychological Association, Washington, 2001.
+- Frankl Viktor E., *Man's Search for Meaning*, Beacon Press, Boston, 2006 (ed. orig. 1946).
+- Bonanno George A., *The Other Side of Sadness: What the New Science of Bereavement Tells Us About Life After Loss*, Basic Books, New York, 2009.
+
+### Modelli classici (contesto storico)
+- Freud Sigmund, *Lutto e melanconia* (1917), in *Opere*, vol. 8, Bollati Boringhieri, Torino, 1976.
+- Bowlby John, *Attachment and Loss: Vol. 3. Loss, Sadness and Depression*, Basic Books, New York, 1980.
 - Kübler-Ross Elisabeth, *On Death and Dying*, Macmillan, New York, 1969.
 - Kübler-Ross Elisabeth, Kessler David, *On Grief and Grieving: Finding the Meaning of Grief Through the Five Stages of Loss*, Scribner, New York, 2005.
 - Worden J. William, *Grief Counseling and Grief Therapy: A Handbook for the Mental Health Practitioner*, Springer, New York, 2018 (5ª ed.).
-- Stroebe Margaret, Schut Henk, *The Dual Process Model of Coping with Bereavement: Rationale and Description*, in «Death Studies», vol. 23, n. 3, 1999, pp. 197-224.
-- Stroebe Margaret, Schut Henk, *The Dual Process Model of Coping with Bereavement: A Decade On*, in «Omega: Journal of Death and Dying», vol. 61, n. 4, 2010, pp. 273-289.
-- Bowlby John, *Attachment and Loss: Vol. 3. Loss, Sadness and Depression*, Basic Books, New York, 1980.
-- Freud Sigmund, *Lutto e melanconia* (1917), in *Opere*, vol. 8, Bollati Boringhieri, Torino, 1976.
-- Neimeyer Robert A., *Meaning Reconstruction and the Experience of Loss*, American Psychological Association, Washington, 2001.
-- Klass Dennis, Silverman Phyllis R., Nickman Steven, *Continuing Bonds: New Understandings of Grief*, Taylor & Francis, Washington, 1996.
 - Parkes Colin Murray, *Bereavement: Studies of Grief in Adult Life*, Routledge, Londra, 2010 (4ª ed.).
+
+### Death Education
+- Testoni Ines, *L'ultima nascita. Psicologia del morire e Death Education*, Bollati Boringhieri, Torino, 2015.
 
 ---
 
@@ -72,5 +83,5 @@
 
 ---
 
-**Totale fonti**: 39
+**Totale fonti**: 46
 **Ultimo aggiornamento**: 14 marzo 2026

@@ -5,6 +5,7 @@
 ---
 
 ## PROLOGO — L'Ingresso
+*GGT: Finestra di Tolleranza — ingresso graduale, ambiente protetto*
 
 ### Frame 01 — Il Buio
 Buio quasi totale. Al centro dell'inquadratura, due mani viste in prima persona emettono una luce dorata tenue. Sotto le mani, un pavimento d'acqua nera e immobile riflette la luce. Nient'altro è visibile.
@@ -30,6 +31,7 @@ Il buio si apre. All'orizzonte dell'acqua nera, una luce arancione intensa e cal
 ---
 
 ## ATTO 1 — Fuoco e Acqua
+*GGT: Orientamento alla Perdita (OP) — confronto con rabbia e senso di colpa, meaning-making*
 
 ### Frame 04 — La Fucina: l'ambiente
 Il giocatore è seduto davanti a un tavolo da fabbro in una caverna sotterranea. Braci ardenti, scintille nell'aria. Sull'incudine un blocco incandescente rosso-arancio, informe e pulsante. A destra, un martello.
@@ -44,6 +46,7 @@ Momento dell'impatto. Il martello colpisce il blocco incandescente sull'incudine
 > "Prendi il martello." — "Colpisci." — "Ancora."
 
 **Mood:** Catarsi · Rabbia canalizzata · Trasformazione
+**GGT:** Meaning-making — dalla rabbia nasce qualcosa (la chiave)
 
 ### Frame 06 — La chiave rivelata
 Il blocco si è trasformato. Sull'incudine giace una chiave luminosa dorata che brilla di luce propria. Le ultime scintille si spengono. Le mani del giocatore si avvicinano per prenderla.
@@ -86,10 +89,12 @@ Il mare è più luminoso. La sagoma dorata è ora chiaramente visibile — una f
 > "Non tutto ciò che lasci andare si perde."
 
 **Mood:** Speranza · Connessione · Anticipazione
+**GGT:** Il rilascio del peso (OP) apre la strada al Continuing Bond
 
 ---
 
 ## ATTO 2 — L'Incontro sul Mare
+*GGT: Continuing Bonds (da esternalizzato a internalizzato), oscillazione OP/OR*
 
 ### Frame 12 — Il Silenzio condiviso
 Due figure sedute una di fronte all'altra sul mare calmo e luminoso. La sagoma dorata è a 2 metri, sulla sedia. Il giocatore è sullo scoglio. Nessun oggetto tra loro. Solo il mare e il cielo stellato.
@@ -97,6 +102,7 @@ Due figure sedute una di fronte all'altra sul mare calmo e luminoso. La sagoma d
 > "Non devi parlare." — "Non devi fare nulla." — "Sii qui."
 
 **Mood:** Intimità · Pace · Presenza
+**GGT:** CB esternalizzato — Senso di Presenza (SED) positivo
 
 ### Frame 13 — Le sfere-parola
 Intorno alla sagoma dorata, 6 sfere cristalline fluttuano in cerchio lento. Ogni sfera contiene una parola luminosa: "Grazie", "Mi manchi", "Ti perdono", "Perdonami", "Vai in pace", "Ti voglio bene".
@@ -111,6 +117,7 @@ La mano del giocatore tocca una sfera-parola. La sfera si illumina, la parola si
 > *Silenzio. Solo suoni cristallini.*
 
 **Mood:** Connessione · Emozione · Rilascio
+**GGT:** CB in trasformazione — dal legame visivo al dialogo interiore (internalizzazione)
 
 ### Frame 15 — La sfera dorata
 Una grande sfera dorata e calda è apparsa sul grembo del giocatore. Emette una luce pulsante, come un cuore. La sagoma è di fronte, ferma, in attesa.
@@ -118,17 +125,20 @@ Una grande sfera dorata e calda è apparsa sul grembo del giocatore. Emette una 
 > "Quando sei pronto... prendi questa luce." — "E alzala verso il cielo."
 
 **Mood:** Scelta finale · Intimità · Coraggio
+**GGT:** Metafora dello *Scrigno interno* — custodire l'essenza del legame
 
 ### Frame 16 — Due presenze sul mare
 La sagoma dorata si dissolve lentamente. Braccia aperte, particelle dorate si staccano dal corpo e volano verso l'alto come lucciole. Il mare riflette tutto. Resta un punto di luce dove sedeva la figura.
 
-> "È tempo di andare avanti."
+> “È tempo di andare avanti.”
 
 **Mood:** Commozione · Rilascio · Trasformazione
+**GGT:** Il *Distillato* — l'essenza più pura del defunto diventa punto di luce, risorsa interna
 
 ---
 
 ## EPILOGO — L'Alba sul Mare
+*GGT: Orientamento alla Ricostruzione (OR), Crescita Post Traumatica (PTG) — tutte e 5 le dimensioni*
 
 ### Frame 17 — La Dissoluzione
 Dal punto di luce dove sedeva la figura, una linea luminosa si espande verso l'orizzonte. Il cielo inizia a cambiare. Le prime sfumature di viola e rosa appaiono all'orizzonte.
@@ -150,6 +160,7 @@ Le mani del giocatore creano. Gesti liberi: palms up generano stelle, push crea 
 > *La voce tace. Il giocatore esplora.*
 
 **Mood:** Rinascita · Potere creativo · Gioia tranquilla
+**GGT/PTG:** Forza personale + Nuove possibilità
 
 ### Frame 20 — L'Alba piena
 L'alba al culmine. Luce dorata ovunque. Il mare è calmo e dorato. Gabbiani in volo. Il giocatore è al centro di un mondo di luce. Dissolvenza al bianco.
@@ -157,3 +168,4 @@ L'alba al culmine. Luce dorata ovunque. Il mare è calmo e dorato. Gabbiani in v
 > "Il viaggio continua." — "Ma non sei più solo." — "Sei parte di qualcosa di più grande." — "Sempre."
 
 **Mood:** Catarsi · Pace · Completezza · Speranza
+**GGT/PTG:** Apprezzamento della vita + Relazione con gli altri + Cambiamento spirituale/esistenziale

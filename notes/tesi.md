@@ -76,10 +76,20 @@ Ricerca teorica → Consulenza con psicologo → Game design → Sviluppo → Do
 
 ## Bibliografia Chiave
 
+### GGT e pilastri teorici
+- **De Luca, M.L.** — *Psicoterapia per il lutto. La Grief and Growth Therapy* (2024) — Framework terapeutico principale del progetto
+- **Stroebe, M. & Schut, H.** — *Dual Process Model* (1999) — Oscillazione tra Orientamento alla Perdita e alla Ricostruzione
+- **Klass, D. et al.** — *Continuing Bonds* (1996) — Il legame che continua con il defunto
+- **Tedeschi, R.G. & Calhoun, L.G.** — *Posttraumatic Growth* (2004) — Crescita dopo il trauma
+- **Neimeyer, R.A.** — *Meaning Reconstruction and the Experience of Loss* (2001) — Ricostruzione del significato
+- **Frankl, V.E.** — *Man's Search for Meaning* (1946) — Logoterapia e senso nella sofferenza
+- **Bonanno, G.A.** — *The Other Side of Sadness* (2009) — Traiettorie del lutto e resilienza
+
+### Modelli classici (contesto storico)
 - **Kübler-Ross, E.** — *On Death and Dying* (1969) — Il modello a cinque fasi del lutto
 - **Worden, J.W.** — *Grief Counselling and Grief Therapy* — I quattro compiti dell'elaborazione
-- **Stroebe, M. & Schut, H.** — *Dual Process Model* (1999) — Oscillazione tra perdita e ripristino
-- **Wagner, J.** — *Grief and Growth Therapy* — Framework terapeutico principale del progetto
+
+### Lutto digitale e VR
 - **Sisto, D.** — *La morte si fa social*, *Online Afterlives* — Lutto nell'era digitale
 - **Slater, M. & Riva, G.** — Presenza, embodiment ed emozioni in VR
 - **Bailenson, J.** — *Experience on Demand* — VR come strumento di empatia

@@ -34,26 +34,34 @@ Capitolo unico di contesto che introduce il lutto, la sua evoluzione nell'era di
 
 ### 1.1 Il lutto: definizioni e modelli
 - Definizioni: lutto, cordoglio, elaborazione della perdita
-- Panoramica sintetica dei modelli classici: Freud, Bowlby, Kübler-Ross, Worden, Stroebe & Schut
-- Limiti dei modelli tradizionali
+- Panoramica sintetica dei modelli classici come contesto storico: Freud (distacco), Bowlby (attaccamento), Kübler-Ross (stadi), Worden (compiti)
+- Limiti dei modelli tradizionali: linearità, prescrittività, assenza della dimensione della crescita
+- Le traiettorie del lutto (Bonanno): cronica, recovery, ritardata, resiliente
+- Il Disturbo da Lutto Prolungato (DSM-5-TR, ICD-11)
 
-### 1.2 La Grief and Growth Therapy
-- Origine, autori e cornice di analisi transazionale
-- Principi fondamentali: dalla perdita alla crescita
-- Fasi e componenti del percorso terapeutico
-- Tecniche terapeutiche principali (sedia vuota, lettera, rituale simbolico, lavoro sugli stati dell'Io, ecc.)
+### 1.2 La Grief and Growth Therapy (De Luca, 2024)
+- Origine e cornice integrativa (Analisi Transazionale)
+- I quattro pilastri del modello:
+  - **Modello Duale del Lutto (DPM)** — Stroebe & Schut: oscillazione adattiva tra Orientamento alla Perdita (OP) e Orientamento alla Ricostruzione (OR); concetto di Overload
+  - **Continuing Bonds (CB)** — Klass et al.: legame che continua in forme internalizzate (dialogo, guida morale) ed esternalizzate (oggetti, luoghi); la trasformazione del CB come obiettivo terapeutico
+  - **Crescita Post Traumatica (PTG)** — Tedeschi & Calhoun: cinque dimensioni (nuove possibilità, relazioni, forza personale, apprezzamento della vita, cambiamento spirituale/esistenziale)
+  - **Ricerca di senso (Meaning-Making)** — Neimeyer, Frankl: ricostruzione narrativa, logoterapia, senso nella sofferenza
+- Relazione circolare tra i pilastri: DPM ↔ CB ↔ PTG ↔ meaning-making
+- Metafore terapeutiche chiave: lo Scrigno interno, il Distillato, i Due cantieri
 - Perché la GGT è stata scelta come framework per questo progetto
 
 ### 1.3 Lutto e tecnologia digitale
-- Morte nell'era dei social media, memorial digitali
+- Morte nell’era dei social media, memorial digitali
 - Davide Sisto: *La morte si fa social*, *Online Afterlives*
+- Thanatecnologia: nuove forme di Continuing Bonds nel digitale
 - Dalla commemorazione passiva al supporto attivo
 
 ### 1.4 Realtà Virtuale come strumento terapeutico e psico-educativo
 - VR in ambito terapeutico: cenni (PTSD, fobie, esposizione)
 - Presenza, embodiment ed emozioni in VR (Slater, Bailenson, Riva)
 - Serious games per la salute mentale
-- VR e lutto: stato dell'arte (Road to Acceptance, "Meeting You", ecc.)
+- VR e lutto: stato dell’arte (Road to Acceptance, “Meeting You”, ecc.)
+- Death Education e il progetto VR: posizionamento al livello primario (sensibilizzazione alla finitudine, promozione della consapevolezza esistenziale)
 - Il gap: assenza di esperienze VR basate su framework terapeutici strutturati
 
 ---
