@@ -112,7 +112,7 @@ nav {
 
 /* ========== PAGE HEADER ========== */
 .page-header {
-    text-align: center;
+    text-align: left;
     margin-bottom: 2.5rem;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid var(--border-light);
@@ -134,7 +134,7 @@ nav {
 
 /* ========== TESI PAGE ========== */
 .tesi-hero {
-    text-align: center;
+    text-align: left;
     padding: 2.5rem 0 2.5rem;
     margin-bottom: 2.5rem;
     border-bottom: 1px solid var(--border-light);
@@ -148,8 +148,6 @@ nav {
     color: var(--text);
     margin-bottom: 1.5rem;
     max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .tesi-hero .meta {
@@ -166,7 +164,6 @@ nav {
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem 3rem;
     max-width: 600px;
-    margin: 0 auto;
     text-align: left;
 }
 
@@ -921,7 +918,7 @@ pre {
 }
 
 .dashboard-hero {
-    text-align: center;
+    text-align: left;
     padding: 3rem 0 2rem;
     margin-bottom: 2rem;
 }
@@ -938,7 +935,6 @@ pre {
     font-size: 1rem;
     color: var(--text-muted);
     max-width: 600px;
-    margin: 0 auto;
     line-height: 1.6;
 }
 
@@ -1099,6 +1095,196 @@ pre {
 .file-card .btn:hover { background: var(--accent-light); }
 .file-card .btn.disabled { background: var(--border); color: var(--text-muted); pointer-events: none; }
 
+/* ========== SECTION CARD (like indice-section, for all pages) ========== */
+.section-card {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background: var(--bg-paper);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius);
+    transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.section-card:hover {
+    border-color: var(--border);
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+.section-card h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent);
+}
+
+.section-card h3 {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-top: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.section-card p {
+    font-size: 0.92rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+.section-card table { margin: 0.5rem 0; }
+
+.section-card .spec-item {
+    display: flex;
+    margin-bottom: 0.4rem;
+    font-size: 0.88rem;
+    padding: 0.2rem 0;
+}
+
+.section-card .spec-item strong {
+    min-width: 160px;
+    flex-shrink: 0;
+    color: var(--text);
+    font-weight: 600;
+}
+
+/* ========== MINI DASHBOARD ========== */
+.mini-dash {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.mini-dash-card {
+    background: var(--bg-paper);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius);
+    padding: 1.2rem 1.4rem;
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.mini-dash-card:hover {
+    border-color: var(--accent-color);
+    box-shadow: 0 4px 12px var(--shadow-strong);
+    transform: translateY(-2px);
+}
+
+.mini-dash-card h3 {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0;
+}
+
+.mini-dash-card p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ========== TEAM PAGE ========== */
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.team-card {
+    background: var(--bg-paper);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.team-card:hover {
+    border-color: var(--border);
+    box-shadow: 0 4px 12px var(--shadow-strong);
+}
+
+.team-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: var(--bg-subtle);
+    border: 3px solid var(--border-light);
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--text-light);
+    overflow: hidden;
+}
+
+.team-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.2rem;
+}
+
+.team-card .team-role {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent-color);
+    margin-bottom: 0.8rem;
+}
+
+.team-card p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* ========== AUDIO EXAMPLE ========== */
+.audio-example {
+    background: var(--bg-subtle);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-sm);
+    padding: 1rem 1.2rem;
+    margin: 0.8rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.audio-example .audio-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text);
+    white-space: nowrap;
+}
+
+.audio-example audio {
+    width: 100%;
+    height: 32px;
+}
+
+.audio-placeholder {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
 /* ========== FOOTER ========== */
 .site-footer {
     text-align: center;
@@ -1128,4 +1314,8 @@ pre {
     .dashboard-hero h1 { font-size: 1.4rem; }
     .spec-item { flex-direction: column; }
     .spec-item strong { min-width: auto; }
+    .mini-dash { grid-template-columns: 1fr; }
+    .team-grid { grid-template-columns: 1fr; }
+    .section-card .spec-item { flex-direction: column; }
+    .section-card .spec-item strong { min-width: auto; }
 }

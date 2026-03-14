@@ -1,6 +1,6 @@
 # Audio — "Il Viaggio"
 
-Voce narrante, musica e sound design
+Voce narrante, musica e SFX
 
 ---
 
@@ -162,7 +162,7 @@ Musica adattiva e dinamica, generata o selezionata per accompagnare l'esperienza
 
 ---
 
-## Sound Design — SFX
+## SFX — Effetti Sonori
 
 Audio spaziale 3D. Ogni suono ha una posizione nello spazio. Feedback sonoro per ogni interazione del giocatore.
 
@@ -179,4 +179,4 @@ Audio spaziale 3D. Ogni suono ha una posizione nello spazio. Feedback sonoro per
 
 ## Audio Esempio
 
-*Sezione per la riproduzione di campioni audio della voce narrante, musica e SFX.*
+Ogni sezione (Voce, Musica, SFX) include un placeholder per campioni audio — non ancora disponibili.

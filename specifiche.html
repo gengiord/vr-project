@@ -13,14 +13,15 @@
         <a href="index.html">Home</a>
         <a href="tesi.html">Tesi</a>
         <a href="progetto.html" class="active">Progetto</a>
+        <a href="team.html">Team</a>
     </div>
     <div class="nav-sub">
         <a href="progetto.html">Info Generali</a>
+        <a href="storia.html">Storia</a>
         <a href="specifiche.html" class="active">Specifiche Tecniche</a>
         <a href="moodboard.html">Moodboard</a>
         <a href="storyboard.html">Storyboard</a>
         <a href="audio.html">Audio</a>
-        <a href="gallery.html">Galleria</a>
         <a href="references.html">References</a>
         <a href="timeline.html">Timeline</a>
     </div>
@@ -30,10 +31,64 @@
 
     <div class="page-header">
         <h1>Specifiche Tecniche</h1>
-        <div class="subtitle">Gesture, ambienti, software, strumenti AI e copertura GGT</div>
+        <div class="subtitle">Software, strumenti AI, audio, ambienti e gesture</div>
     </div>
 
-    <div class="spec-block">
+    <div class="section-card">
+        <h2>Software e SDK</h2>
+        <table>
+            <thead>
+                <tr><th>Strumento</th><th>Versione</th><th>Ruolo</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Unity</td><td>2022.3 LTS</td><td>Game engine principale</td></tr>
+                <tr><td>Meta XR All-In-One SDK</td><td>Latest</td><td>Hand tracking, passthrough, interazione VR</td></tr>
+                <tr><td>Meta Quest</td><td>Quest 3 / Quest 2</td><td>Piattaforma target (standalone)</td></tr>
+                <tr><td>ElevenLabs</td><td>Multilingual v3</td><td>Generazione voce narrante (TTS)</td></tr>
+                <tr><td>Visual Studio Code</td><td>Latest</td><td>Editor codice C#</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section-card">
+        <h2>Strumenti AI</h2>
+        <p>Il progetto utilizza strumenti AI per accelerare la produzione:</p>
+        <table>
+            <thead>
+                <tr><th>Strumento</th><th>Uso</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Windsurf (Cascade)</td><td>Assistente di codifica per sviluppo Unity, debugging, documentazione e gestione del sito</td></tr>
+                <tr><td>Google Gemini</td><td>Ricerca, analisi testi accademici, generazione bozze per la tesi, brainstorming</td></tr>
+                <tr><td>ElevenLabs</td><td>Generazione voce narrante italiana custom (Multilingual v3)</td></tr>
+                <tr><td>Meshy AI</td><td>Generazione modelli 3D e concept art per ambienti e oggetti interattivi</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section-card">
+        <h2>Audio</h2>
+        <p>Voce narrante (38 battute, ~1m 40s), musica adattiva e SFX spaziali 3D. Per lo script completo, le tempistiche e il sound design dettagliato vedi la pagina <a href="audio.html"><strong>Audio</strong></a>.</p>
+    </div>
+
+    <div class="section-card">
+        <h2>Ambienti</h2>
+        <table>
+            <thead>
+                <tr><th>Ambiente</th><th>Seduto su...</th><th>Oggetti zona mani</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Prologo</td><td>Vuoto (sedia reale)</td><td>3 sfere tutorial</td></tr>
+                <tr><td>Fucina</td><td>Roccia bassa</td><td>Incudine, martello, blocco</td></tr>
+                <tr><td>Porta</td><td>Buio</td><td>Chiave, porta</td></tr>
+                <tr><td>Mare — Pietre</td><td>Scoglio</td><td>Pietre fluttuanti</td></tr>
+                <tr><td>Mare — Incontro</td><td>Scoglio</td><td>Sfere-parola + sfera dorata</td></tr>
+                <tr><td>Alba</td><td>Scoglio</td><td>Nulla (mani = strumento)</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section-card">
         <h2>Gesture</h2>
         <table>
             <thead>
@@ -51,79 +106,6 @@
             </tbody>
         </table>
         <p>Tutti i gesti sono equivalenti a movimenti quotidiani da seduti. Escursione massima 30-40cm. Gomito mai sopra la spalla.</p>
-    </div>
-
-    <div class="spec-block">
-        <h2>Ambienti</h2>
-        <table>
-            <thead>
-                <tr><th>Ambiente</th><th>Seduto su...</th><th>Oggetti zona mani</th></tr>
-            </thead>
-            <tbody>
-                <tr><td>Prologo</td><td>Vuoto (sedia reale)</td><td>3 sfere tutorial</td></tr>
-                <tr><td>Fucina</td><td>Roccia bassa</td><td>Incudine, martello, blocco</td></tr>
-                <tr><td>Porta</td><td>Buio</td><td>Chiave, porta</td></tr>
-                <tr><td>Mare — Pietre</td><td>Scoglio</td><td>Pietre fluttuanti</td></tr>
-                <tr><td>Mare — Incontro</td><td>Scoglio</td><td>Sfere-parola + sfera dorata</td></tr>
-                <tr><td>Alba</td><td>Scoglio</td><td>Nulla (mani = strumento)</td></tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="spec-block">
-        <h2>Software e SDK</h2>
-        <table>
-            <thead>
-                <tr><th>Strumento</th><th>Versione</th><th>Ruolo</th></tr>
-            </thead>
-            <tbody>
-                <tr><td>Unity</td><td>2022.3 LTS</td><td>Game engine principale</td></tr>
-                <tr><td>Meta XR All-In-One SDK</td><td>Latest</td><td>Hand tracking, passthrough, interazione VR</td></tr>
-                <tr><td>Meta Quest</td><td>Quest 3 / Quest 2</td><td>Piattaforma target (standalone)</td></tr>
-                <tr><td>ElevenLabs</td><td>Multilingual v3</td><td>Generazione voce narrante (TTS)</td></tr>
-                <tr><td>Visual Studio Code</td><td>Latest</td><td>Editor codice C#</td></tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="spec-block">
-        <h2>Strumenti AI</h2>
-        <p>Il progetto utilizza strumenti AI per accelerare la produzione:</p>
-        <table>
-            <thead>
-                <tr><th>Strumento</th><th>Uso</th></tr>
-            </thead>
-            <tbody>
-                <tr><td>Windsurf (Cascade)</td><td>Assistente di codifica per sviluppo Unity, debugging, documentazione e gestione del sito</td></tr>
-                <tr><td>Google Gemini</td><td>Ricerca, analisi testi accademici, generazione bozze per la tesi, brainstorming</td></tr>
-                <tr><td>ElevenLabs</td><td>Generazione voce narrante italiana custom (Multilingual v3)</td></tr>
-                <tr><td>Meshy AI</td><td>Generazione modelli 3D e concept art per ambienti e oggetti interattivi</td></tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="spec-block">
-        <h2>Audio</h2>
-        <p>Voce narrante (38 battute, ~1m 40s), musica adattiva e SFX spaziali 3D. Per lo script completo, le tempistiche e il sound design dettagliato vedi la pagina <a href="audio.html"><strong>Audio</strong></a>.</p>
-    </div>
-
-    <div class="spec-block">
-        <h2>Copertura GGT — I Quattro Pilastri (De Luca, 2024)</h2>
-        <table>
-            <thead>
-                <tr><th>Pilastro GGT</th><th>Dove</th><th>Come</th></tr>
-            </thead>
-            <tbody>
-                <tr><td>DPM — Orientamento alla Perdita (OP)</td><td>Atto 1 (Fuoco) + Atto 2 (Acqua)</td><td>Confronto con rabbia, elaborazione senso di colpa</td></tr>
-                <tr><td>DPM — Orientamento alla Ricostruzione (OR)</td><td>Epilogo (Alba)</td><td>Gesti creativi, mani che trasformano il mondo</td></tr>
-                <tr><td>DPM — Oscillazione OP/OR</td><td>Arco complessivo</td><td>Atto 1-2 (OP) → Atto 3 (oscillazione) → Epilogo (OR)</td></tr>
-                <tr><td>Continuing Bonds — Esternalizzato</td><td>Atto 3 (Sagoma dorata)</td><td>Presenza visiva del defunto, silenzio condiviso</td></tr>
-                <tr><td>Continuing Bonds — Internalizzazione</td><td>Atto 3 → Epilogo</td><td>Sfere-parola, sfera dorata (“Scrigno”), dissoluzione in luce (“Distillato”)</td></tr>
-                <tr><td>PTG (5 dimensioni)</td><td>Atto 1 + Epilogo</td><td>Forza personale, nuove possibilità, apprezzamento vita, relazioni, cambiamento spirituale</td></tr>
-                <tr><td>Meaning-Making</td><td>Tutti</td><td>Rabbia→chiave, colpa→incontro, alba dal punto del defunto</td></tr>
-            </tbody>
-        </table>
-        <p><strong>Copertura: 4/4 pilastri GGT, 5/5 dimensioni PTG, 4/4 metafore chiave</strong></p>
     </div>
 
 </div>

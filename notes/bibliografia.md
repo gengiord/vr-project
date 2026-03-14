@@ -12,6 +12,4 @@ ISBN 978-88-922-4204-3
 
 ---
 
-**Ultimo aggiornamento**: 14 marzo 2026
-
-> La bibliografia completa della tesi è disponibile in [Tesi.md](../../tesi/Tesi.md). La versione precedente di questa pagina è stata archiviata in `bibliografia-legacy.md`.
+**Nota:** Questa bibliografia è temporanea e in fase di aggiornamento.
