@@ -60,6 +60,7 @@ nav {
 .nav-main a {
     display: flex;
     align-items: center;
+    gap: 0.5rem;
     padding: 0.75rem 1.2rem;
     font-size: 0.8rem;
     font-weight: 600;
@@ -88,6 +89,7 @@ nav {
 .nav-sub a {
     display: flex;
     align-items: center;
+    gap: 0.4rem;
     padding: 0.55rem 0.9rem;
     font-size: 0.75rem;
     font-weight: 500;
@@ -97,6 +99,10 @@ nav {
     transition: all var(--transition);
     border-bottom: 2px solid transparent;
     margin-bottom: -1px;
+}
+
+.nav-main .nav-icon, .nav-sub .nav-icon {
+    font-size: 0.9rem;
 }
 
 .nav-sub a:hover { color: var(--text); background: var(--bg-subtle); border-radius: var(--radius-sm) var(--radius-sm) 0 0; }
@@ -114,6 +120,9 @@ nav {
     text-align: left;
     margin-bottom: 2.5rem;
     padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .page-header h1 {
@@ -128,8 +137,15 @@ nav {
 .page-header p.subtitle {
     font-size: 0.88rem;
     color: var(--text-muted);
-    margin-top: 0.4rem;
+    margin-top: 0.2rem;
     font-weight: 400;
+}
+
+.page-header .page-icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+    width: 3rem;
+    text-align: center;
 }
 
 /* ========== TESI PAGE ========== */
@@ -230,9 +246,15 @@ nav {
     background: var(--bg-paper);
     border: 1px solid var(--border-light);
     border-radius: var(--radius);
-    padding: 1.2rem 1.4rem;
-    font-size: 0.88rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
     transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.tesi-card .tesi-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    display: block;
 }
 
 .tesi-card:hover {
@@ -939,7 +961,7 @@ pre {
 
 .dashboard-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
     margin-bottom: 2rem;
 }
@@ -953,8 +975,8 @@ pre {
     color: var(--text);
     transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
     display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
+    align-items: center;
+    gap: 1rem;
 }
 
 .dash-card:hover {
@@ -969,6 +991,13 @@ pre {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--text-muted);
+}
+
+.dash-card .dash-icon {
+    font-size: 1.8rem;
+    flex-shrink: 0;
+    width: 2rem;
+    text-align: center;
 }
 
 .dash-card h3 {
@@ -1054,7 +1083,7 @@ pre {
     background: var(--bg-paper);
     border: 1px solid var(--border-light);
     border-radius: var(--radius);
-    padding: 2rem;
+    padding: 1.5rem;
     text-align: center;
     margin-bottom: 1.5rem;
     transition: border-color var(--transition);
@@ -1063,8 +1092,8 @@ pre {
 .file-card:hover { border-color: var(--border); }
 
 .file-card .file-icon {
-    font-size: 2.5rem;
-    margin-bottom: 0.8rem;
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
 }
 
 .file-card h3 {
@@ -1174,6 +1203,12 @@ pre {
     border-color: var(--border);
     box-shadow: 0 4px 12px var(--shadow-strong);
     transform: translateY(-1px);
+}
+
+.mini-dash-card .mini-dash-icon {
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+    display: block;
 }
 
 .mini-dash-card h3 {
@@ -1501,6 +1536,10 @@ pre {
 .site-footer strong { color: var(--text-muted); font-weight: 600; }
 
 /* ========== RESPONSIVE ========== */
+@media (max-width: 1024px) {
+    .dashboard-grid { grid-template-columns: 1fr 1fr; }
+}
+
 @media (max-width: 768px) {
     .page, .dashboard { padding: 1.5rem 1rem; }
     .frame-card, .ref-card { grid-template-columns: 1fr; }
