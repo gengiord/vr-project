@@ -131,6 +131,7 @@ nav {
     letter-spacing: -0.02em;
     color: var(--text);
     margin-bottom: 0;
+    line-height: 1.2;
 }
 
 .page-header .subtitle,
@@ -159,7 +160,7 @@ nav {
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: -0.01em;
-    line-height: 1.4;
+    line-height: 1.2;
     color: var(--text);
     margin-bottom: 1.5rem;
     max-width: 700px;
@@ -847,6 +848,48 @@ pre {
     font-size: 0.88rem;
 }
 
+.ref-video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.ref-video-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: box-shadow var(--transition);
+}
+
+.ref-video-item:hover { box-shadow: 0 4px 12px var(--shadow-strong); }
+
+.ref-video-wrapper {
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+
+.ref-video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.ref-video-item h4 {
+    margin: 0.6rem 0.8rem 0.1rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.ref-video-item p {
+    margin: 0 0.8rem 0.6rem;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
 /* ========== REFERENCES CARD ========== */
 .ref-card {
     display: grid;
@@ -917,6 +960,12 @@ pre {
     border: 1px solid var(--border-light);
 }
 
+.ref-image iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 .ref-image img {
     width: 100%;
     height: 100%;
@@ -950,6 +999,7 @@ pre {
     letter-spacing: -0.02em;
     color: var(--text);
     margin-bottom: 0.4rem;
+    line-height: 1.2;
 }
 
 .dashboard-hero p {
@@ -1024,15 +1074,6 @@ pre {
     margin: 1.5rem 0;
 }
 
-.timeline::before {
-    content: '';
-    position: absolute;
-    left: 0.5rem;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: var(--border);
-}
 
 .timeline-item {
     position: relative;
@@ -1041,18 +1082,6 @@ pre {
 
 .timeline-item:last-child { padding-bottom: 0; }
 
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -1.55rem;
-    top: 0.35rem;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: var(--accent);
-    border: 2px solid var(--bg);
-    box-shadow: 0 0 0 2px var(--border);
-}
 
 .timeline-item.done::before { background: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
 
@@ -1313,6 +1342,222 @@ pre {
     height: 32px;
 }
 
+/* Enhanced Audio Styles */
+.audio-examples {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.audio-item {
+    background: var(--bg-subtle);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-sm);
+    padding: 1.2rem;
+}
+
+.audio-item h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.8rem;
+}
+
+.audio-item audio {
+    width: 100%;
+    height: 32px;
+    margin-bottom: 0.8rem;
+}
+
+.audio-transcript {
+    background: var(--bg-paper);
+    border-left: 3px solid var(--accent);
+    padding: 0.8rem;
+    border-radius: var(--radius-sm);
+}
+
+.audio-transcript p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.audio-transcript strong {
+    color: var(--text);
+    font-weight: 600;
+}
+
+/* Music and SFX Recommendations */
+.music-recommendations,
+.sfx-recommendations {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: var(--bg-subtle);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-sm);
+}
+
+.music-recommendations h4,
+.sfx-recommendations h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 1rem;
+}
+
+.music-links,
+.sfx-links {
+    display: grid;
+    gap: 1rem;
+}
+
+.music-item,
+.sfx-item {
+    background: var(--bg-paper);
+    padding: 0.8rem;
+    border-radius: var(--radius-sm);
+    border-left: 3px solid var(--accent);
+}
+
+.music-item h5,
+.sfx-item h5 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+}
+
+.music-item ul,
+.sfx-item ul {
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.music-item li,
+.sfx-item li {
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.music-item a,
+.sfx-item a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+.music-item a:hover,
+.sfx-item a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+.music-note,
+.sfx-note {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+/* Music Player Styles */
+.music-player-section {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: var(--bg-subtle);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-sm);
+}
+
+.music-player-section h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 1rem;
+}
+
+.music-tracks {
+    display: grid;
+    gap: 1rem;
+}
+
+.music-track {
+    background: var(--bg-paper);
+    padding: 1rem;
+    border-radius: var(--radius-sm);
+    border-left: 3px solid var(--accent);
+}
+
+.music-track h5 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.3rem;
+}
+
+.music-track p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+}
+
+.music-track audio {
+    width: 100%;
+    height: 32px;
+    display: none;
+}
+
+/* SFX Examples Styles */
+.sfx-examples {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: var(--bg-subtle);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-sm);
+}
+
+.sfx-examples h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 1rem;
+}
+
+.sfx-tracks {
+    display: grid;
+    gap: 1rem;
+}
+
+.sfx-track {
+    background: var(--bg-paper);
+    padding: 1rem;
+    border-radius: var(--radius-sm);
+    border-left: 3px solid var(--accent);
+}
+
+.sfx-track h5 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.3rem;
+}
+
+.sfx-track p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+}
+
+.sfx-track audio {
+    width: 100%;
+    height: 32px;
+    display: none;
+}
+
 .audio-placeholder {
     font-size: 0.8rem;
     color: var(--text-light);
@@ -1434,6 +1679,157 @@ pre {
     margin-bottom: 0.4rem;
 }
 
+/* Enhanced Story Card Styles */
+.story-emotion {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: var(--accent);
+    background: rgba(74, 32, 96, 0.1);
+    padding: 0.1rem 0.4rem;
+    border-radius: var(--radius-sm);
+    margin-bottom: 0.4rem;
+    margin-left: 0.5rem;
+}
+
+.story-details {
+    display: grid;
+    gap: 1rem;
+}
+
+.story-environment,
+.story-actions,
+.story-transition {
+    padding: 0.8rem;
+    background: var(--bg-subtle);
+    border-radius: var(--radius-sm);
+    border-left: 3px solid var(--accent);
+}
+
+.story-environment h4,
+.story-actions h4,
+.story-transition h4 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.3rem;
+}
+
+.story-environment p,
+.story-actions p,
+.story-transition p {
+    margin-bottom: 0;
+}
+
+/* Story Timeline */
+.story-timeline {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: var(--bg-paper);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius);
+}
+
+.timeline-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.timeline-header h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.3rem;
+}
+
+.timeline-header p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+.timeline-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.timeline-marker {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 0.7rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.timeline-phase {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.timeline-content {
+    flex: 1;
+    padding-top: 0.5rem;
+}
+
+.timeline-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.2rem;
+}
+
+.timeline-time {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 0.2rem;
+}
+
+.timeline-emotion {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 0.3rem;
+}
+
+.timeline-desc {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.timeline-connector {
+    position: absolute;
+    left: 40px;
+    top: 80px;
+    width: 2px;
+    height: 1.5rem;
+    background: linear-gradient(to bottom, var(--border-light), transparent);
+    z-index: 1;
+}
+
+.story-sections {
+    display: grid;
+    gap: 2rem;
+}
+
 /* ========== TIMELINE CARD (improved) ========== */
 .tl-phase {
     margin-bottom: 2.5rem;
@@ -1548,6 +1944,7 @@ pre {
     .tesi-grid, .dashboard-grid { grid-template-columns: 1fr; }
     .tesi-grid-3 { grid-template-columns: 1fr; }
     .mood-grid { grid-template-columns: 1fr; }
+    .ref-video-grid { grid-template-columns: 1fr; }
     .meta-grid { grid-template-columns: 1fr; }
     .nav-sub { overflow-x: auto; flex-wrap: nowrap; }
     .page-header h1 { font-size: 1.3rem; }
@@ -1563,4 +1960,8 @@ pre {
     .htl-item { min-width: 110px; }
     .tl-card { flex-direction: column; gap: 0.8rem; }
     .tl-card .tl-week { width: auto; height: auto; flex-direction: row; gap: 0.3rem; padding: 0.4rem 0.8rem; }
+    .timeline-item { flex-direction: column; align-items: center; gap: 1rem; }
+    .timeline-marker { width: 60px; height: 60px; font-size: 0.6rem; }
+    .timeline-content { text-align: center; }
+    .timeline-connector { display: none; }
 }

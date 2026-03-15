@@ -1,7 +1,7 @@
 import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
 import SectionCard from '../components/SectionCard';
-import MiniDashCard from '../components/MiniDashCard';
+import DashCard from '../components/DashCard';
 
 export default function Tesi() {
   return (
@@ -27,7 +27,7 @@ export default function Tesi() {
 
         <SectionCard title="Motivazione">
           <p><strong>Personale:</strong> Esperienze di lutto vissute in prima persona — la perdita di un nonno, la separazione dei genitori, la fine di una relazione.</p>
-          <p><strong>Accademica:</strong> Gap nella ricerca — la VR non è mai stata impiegata a fini psico-educativi per l'elaborazione del lutto.</p>
+          <p><strong>Accademica:</strong> Gap nella ricerca — la VR è stata poco impiegata a fini psico-educativi per l'elaborazione del lutto.</p>
         </SectionCard>
 
         <SectionCard title="Obiettivi">
@@ -66,10 +66,10 @@ export default function Tesi() {
           <blockquote>"Più lasci andare il peso, più puoi avvicinarti a chi hai perso."</blockquote>
         </SectionCard>
 
-        <div className="mini-dash">
-          <MiniDashCard to="/indice" icon="📋" title="Indice" description="Struttura completa della tesi: 3 capitoli, introduzione e conclusioni." />
-          <MiniDashCard to="/bibliografia" icon="📖" title="Bibliografia" description="Fonte principale e fonti secondarie per il framework teorico." />
-          <MiniDashCard to="/documenti" icon="📁" title="Documenti" description="Download della tesi in formato PDF e Word." />
+        <div className="dashboard-grid">
+          <DashCard to="/indice" icon="📋" title="Indice" description="Struttura completa della tesi: 3 capitoli, introduzione e conclusioni." />
+          <DashCard to="/bibliografia" icon="📖" title="Bibliografia" description="Fonte principale e fonti secondarie per il framework teorico." />
+          <DashCard to="/documenti" icon="📁" title="Documenti" description="Download della tesi in formato PDF e Word." />
         </div>
       </div>
     </Layout>

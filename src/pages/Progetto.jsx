@@ -1,7 +1,7 @@
 import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
 import SectionCard from '../components/SectionCard';
-import MiniDashCard from '../components/MiniDashCard';
+import DashCard from '../components/DashCard';
 
 export default function Progetto() {
   return (
@@ -25,15 +25,15 @@ export default function Progetto() {
           <p>La <strong>voce narrante</strong> guida con frasi brevi e pause lunghe. Parla solo per ~7% del tempo totale (~1m 40s su 15-25 min). Il resto è silenzio, suoni ambientali e azione del giocatore.</p>
         </SectionCard>
 
-        <div className="mini-dash">
-          <MiniDashCard to="/storia" icon="📖" title="Storia" description="Struttura narrativa: Prologo, 3 Atti, Epilogo." />
-          <MiniDashCard to="/specifiche" icon="⚙️" title="Specifiche Tecniche" description="Software, SDK e strumenti AI." />
-          <MiniDashCard to="/gameplay" icon="🕹️" title="Gameplay" description="Gesture, interazioni e meccaniche di gioco." />
-          <MiniDashCard to="/moodboard" icon="🎨" title="Moodboard" description="Stile visivo, palette colori, ambienti e reference." />
-          <MiniDashCard to="/storyboard" icon="🎬" title="Storyboard" description="20 frame con testo, concept art e galleria." />
-          <MiniDashCard to="/audio" icon="🎵" title="Audio" description="Voce narrante, musica e SFX." />
-          <MiniDashCard to="/reference" icon="🔗" title="Reference" description="Progetti VR ispiratori e fonti artistiche." />
-          <MiniDashCard to="/timeline" icon="📅" title="Timeline" description="Pianificazione su 12 settimane." />
+        <div className="dashboard-grid">
+          <DashCard to="/storia" icon="📖" title="Storia" description="Struttura narrativa: Prologo, 3 Atti, Epilogo." />
+          <DashCard to="/specifiche" icon="⚙️" title="Specifiche Tecniche" description="Software, SDK e strumenti AI." />
+          <DashCard to="/gameplay" icon="🕹️" title="Gameplay" description="Gesture, interazioni e meccaniche di gioco." />
+          <DashCard to="/moodboard" icon="🎨" title="Moodboard" description="Stile visivo, palette colori, ambienti e reference." />
+          <DashCard to="/storyboard" icon="🎬" title="Storyboard" description="20 frame con testo, concept art e galleria." />
+          <DashCard to="/audio" icon="🎵" title="Audio" description="Voce narrante, musica e SFX." />
+          <DashCard to="/reference" icon="🔗" title="Reference" description="Progetti VR ispiratori e fonti artistiche." />
+          <DashCard to="/timeline" icon="📅" title="Timeline" description="Pianificazione su 12 settimane." />
         </div>
       </div>
     </Layout>

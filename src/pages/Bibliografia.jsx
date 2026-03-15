@@ -49,6 +49,15 @@ export default function Bibliografia() {
           <BiblioItem>Riva Giuseppe, <em>Psicologia dei nuovi media</em>, Il Mulino, Bologna, 2012.</BiblioItem>
         </SectionCard>
 
+        <SectionCard title="Fonti Secondarie — VR e Lutto" className="biblio-section">
+          <BiblioItem>Botella Cristina, Baños Rosa M., García-Palacios Azucena, Quero Soledad, <em>Treatment of Complicated Grief Using Virtual Reality: A Case Report</em>, in «Death Studies», vol. 32, n. 7, 2008, pp. 674-692.</BiblioItem>
+          <BiblioItem>Quero Soledad, Molés Marta, Campos Daniel, Andreu-Mateu Sandra, Baños Rosa M., Botella Cristina, <em>An Adaptive Virtual Reality System for the Treatment of Adjustment Disorder and Complicated Grief</em>, in «International Journal of Human-Computer Studies», vol. 71, n. 3, 2013.</BiblioItem>
+          <BiblioItem>Pizzoli Silvia F.M., Mazzocco Ketti, Triberti Stefano, Monzani Dario, Alcañiz Raya Mariano, Pravettoni Gabriella, <em>From Virtual to Real Healing: A Critical Overview of the Therapeutic Potential of VR for Grief</em>, in «Frontiers in Psychology», vol. 12, 2021.</BiblioItem>
+          <BiblioItem>Sabina Milena, Van den Berg Danielle, <em>Grief and Virtual Reality: Continuing Bonds with Virtual Avatars</em>, in «Phenomenology and the Cognitive Sciences», vol. 24, 2025.</BiblioItem>
+          <BiblioItem>Alvarenga Thais, Kobenova Amina, <em>Road to Acceptance: A Gamified VR Narrative Journey Through the Stages of Grief</em>, in DiGRA Conference Proceedings, Tampere, 2024.</BiblioItem>
+          <BiblioItem>Alvarenga Thais, Kobenova Amina, <em>Designing Virtual Reality Games for Grief: A Workshop Approach with Mental Health Professionals</em>, arXiv:2512.17025, 2025.</BiblioItem>
+        </SectionCard>
+
         <SectionCard title="Fonti Secondarie — Game Design e VR" className="biblio-section">
           <BiblioItem>Schell Jesse, <em>The Art of Game Design: A Book of Lenses</em>, CRC Press, Boca Raton, 2019 (3ª ed.).</BiblioItem>
           <BiblioItem>Isbister Katherine, <em>How Games Move Us: Emotion by Design</em>, MIT Press, Cambridge, 2016.</BiblioItem>

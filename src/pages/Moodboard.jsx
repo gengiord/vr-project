@@ -80,11 +80,7 @@ export default function Moodboard() {
           </table>
         </SectionCard>
 
-        <h2 className="section-header">Reference Visivi</h2>
-        <div className="mood-placeholder">
-          Sezione in costruzione — Qui verranno inserite immagini di riferimento, screenshot di giochi ispiratori (Journey, Gris, Abzu, Sea of Solitude), concept art aggiuntivi e moodboard visivi per ogni atto dell'esperienza.
-        </div>
-      </div>
+              </div>
     </Layout>
   );
 }

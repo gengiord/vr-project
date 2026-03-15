@@ -2,8 +2,8 @@ export const mainNav = [
   { path: '/', label: 'Home', icon: '🏠' },
   { path: '/tesi', label: 'Tesi', icon: '📚' },
   { path: '/progetto', label: 'Progetto', icon: '🎮' },
-  { path: '/team', label: 'Team', icon: '👥' },
   { path: '/documenti', label: 'Documenti', icon: '📁' },
+  { path: '/team', label: 'Team', icon: '👥' },
 ];
 
 export const tesiSub = [

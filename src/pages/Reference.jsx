@@ -1,7 +1,7 @@
 import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
 
-function RefCard({ title, meta, description, elements, link, linkText }) {
+function RefCard({ title, meta, description, elements, link, linkText, video, image }) {
   return (
     <div className="ref-card">
       <div className="ref-text">
@@ -12,7 +12,19 @@ function RefCard({ title, meta, description, elements, link, linkText }) {
         <a href={link} target="_blank" rel="noopener noreferrer" className="ref-link">{linkText || 'Visita il sito'} →</a>
       </div>
       <div className="ref-image">
-        <span className="placeholder">Immagine</span>
+        {video ? (
+          <iframe
+            src={video}
+            title={`${title} trailer`}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        ) : image ? (
+          <img src={image} alt={title} />
+        ) : (
+          <span className="placeholder">Media non disponibile</span>
+        )}
       </div>
     </div>
   );
@@ -24,19 +36,22 @@ export default function Reference() {
       <div className="page">
         <PageHeader icon="🔗" title="Reference" subtitle="Fonti ispiratrici e progetti di riferimento" />
 
-        <h2 className="section-header">Progetti VR Terapeutici</h2>
+        <h2 className="section-header">Esperienze sul Lutto e Terapia</h2>
 
         <RefCard
-          title="Journey" meta="Thatgamecompany, 2012"
-          description="Esperienza che esplora il viaggio spirituale attraverso paesaggi desertici. Nota per la sua narrazione non verbale e l'uso del colore per comunicare emozioni."
-          elements="Progressione emotiva attraverso colori, narrazione non verbale, design minimalista."
-          link="https://thatgamecompany.com/journey/"
+          title="Road to Acceptance" meta="Alvarenga & Kobenova, 2024"
+          description="Gioco VR gamificato che guida il giocatore attraverso le fasi del lutto di Kübler-Ross tramite storytelling interattivo e micro-giochi. Progetto accademico presentato alla DiGRA Conference 2024."
+          elements="Approccio gamificato al lutto, narrazione in prima persona, struttura a fasi emotive."
+          link="https://arxiv.org/abs/2512.17025"
+          linkText="Leggi il paper"
+          image="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/K%C3%BCbler-Ross_model.svg/1200px-K%C3%BCbler-Ross_model.svg.png"
         />
         <RefCard
-          title="Road to Acceptance" meta="Lucid Games, 2020"
-          description="Esperienza VR creata da un developer che ha perso il padre. Permette agli utenti di interagire con ricordi e oggetti significativi in un ambiente virtuale. Uno dei primi esempi di VR applicata al lutto."
-          elements="Approccio empatico, uso di oggetti simbolici, spazi intimi."
-          link="#"
+          title="That Dragon, Cancer" meta="Numinous Games, 2016"
+          description="Gioco narrativo autobiografico che racconta la lotta di un bambino contro il cancro. Esperienza profondamente emotiva che esplora fede, speranza e perdita. Disponibile anche in VR."
+          elements="Narrazione autobiografica, gestione del lutto attraverso il gioco, immersione emotiva."
+          link="https://www.thatdragoncancer.com/"
+          video="https://www.youtube.com/embed/vlKCJlhJwxU"
         />
         <RefCard
           title="Meeting You" meta="MBC Documentary, Corea del Sud, 2020"
@@ -44,21 +59,67 @@ export default function Reference() {
           elements="Riflessioni etiche, importanza del consenso, limiti della simulazione."
           link="https://www.youtube.com/watch?v=uflTK8c4w0c"
           linkText="Guarda il documentario"
+          video="https://www.youtube.com/embed/uflTK8c4w0c"
+        />
+        <RefCard
+          title="EMMA's World" meta="Botella, Baños et al., 2008"
+          description="Ambiente virtuale terapeutico sviluppato per il trattamento del lutto complicato e del PTSD. I pazienti interagiscono con ambienti simbolici (prati, deserti, foreste) per elaborare le emozioni legate alla perdita."
+          elements="VR clinica per il lutto, ambienti simbolici adattivi, integrazione con CBT."
+          link="https://www.researchgate.net/publication/23389624"
+          linkText="Leggi il paper"
+          image="https://www.researchgate.net/publication/23389624/figure/fig1/AS:340731285901313@1458245748498/mage-of-EMMAs-World-the-Book-of-Life-and-different-aspects-of-the-virtual-environment.png"
+        />
+        <RefCard
+          title="Traces: The Grief Processor" meta="Vali Fugulin / Couzin Films, 2025"
+          description="Esperienza VR multi-utente interattiva che invita a esplorare poeticamente il proprio lutto — dalla perdita di una persona cara a un'amicizia o un sogno. Guidata da un ritualista, utilizza elementi personali dei partecipanti per creare un'esperienza condivisa. Selezionata al SXSW 2025."
+          elements="Elaborazione collettiva del lutto, ritualità digitale, personalizzazione dell'esperienza, VR come spazio poetico."
+          link="https://www.couzinfilms.com/en/productions/traces"
+          video="https://player.vimeo.com/video/1062239027"
+        />
+        <RefCard
+          title="Spiritfarer" meta="Thunder Lotus Games, 2020"
+          description="Gioco di gestione e narrazione sul tema dell'accompagnamento alla morte. Il giocatore guida anime verso l'aldilà, costruendo relazioni e affrontando il distacco. Premiato per la sua delicatezza nel trattare la perdita."
+          elements="Accompagnamento alla morte come meccanica, costruzione di relazioni, accettazione del distacco."
+          link="https://thunderlotusgames.com/spiritfarer/"
+          video="https://www.youtube.com/embed/4pKJ-NuSjNE"
         />
 
-        <h2 className="section-header" style={{ marginTop: '2rem' }}>Fonti Artistiche — Stile Visivo</h2>
+        <h2 className="section-header" style={{ marginTop: '2rem' }}>Fonti Artistiche — Stile Visivo 3D/VR</h2>
 
+        <RefCard
+          title="Journey" meta="Thatgamecompany, 2012"
+          description="Esperienza che esplora il viaggio spirituale attraverso paesaggi desertici. Nota per la sua narrazione non verbale e l'uso del colore per comunicare emozioni."
+          elements="Progressione emotiva attraverso colori, narrazione non verbale, design minimalista."
+          link="https://thatgamecompany.com/journey/"
+          video="https://www.youtube.com/embed/61DZC-60x20"
+        />
         <RefCard
           title="Gris" meta="Nomada Studio / Devolver Digital, 2018"
           description="Gioco indie che usa il colore e la luce per rappresentare il percorso di elaborazione di un lutto. Ogni colore rappresenta un'emozione diversa. Ha ispirato la palette cromatica del progetto."
           elements="Uso simbolico dei colori, progressione visiva, minimalismo emotivo."
           link="https://nomada.studio/"
+          video="https://www.youtube.com/embed/RdrvV25zoA8"
+        />
+        <RefCard
+          title="Neva" meta="Nomada Studio / Devolver Digital, 2024"
+          description="Dal team di Gris, un'avventura sul legame tra una guerriera e un cucciolo di lupo in un mondo che muore. Esplora temi di perdita, crescita e trasformazione attraverso le stagioni."
+          elements="Evoluzione del legame emotivo, uso delle stagioni come metafora, arte pittorica."
+          link="https://nevagame.com/"
+          video="https://www.youtube.com/embed/6TwolC-YT2Y"
         />
         <RefCard
           title="Abzu" meta="Giant Squid / 505 Games, 2016"
           description="Esperienza subacquea meditativa. Nota per il suo uso dell'acqua come metafora emotiva e l'assenza di dialoghi. Ha influenzato il design degli ambienti acquatici del progetto."
           elements="Metafore acquatiche, ambienti meditativi, narrazione ambientale."
           link="https://abzugame.com/"
+          video="https://www.youtube.com/embed/bpvHqAsNVH0"
+        />
+        <RefCard
+          title="Flower" meta="Thatgamecompany, 2009"
+          description="Esperienza poetica in cui il giocatore controlla il vento e guida petali di fiori attraverso paesaggi che si trasformano. Esplora la tensione tra natura e urbanizzazione con un linguaggio puramente visivo."
+          elements="Interazione attraverso il movimento, trasformazione ambientale, serenità come gameplay."
+          link="https://thatgamecompany.com/flower/"
+          video="https://www.youtube.com/embed/0IS9sGGuvYo"
         />
       </div>
     </Layout>
