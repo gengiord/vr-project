@@ -1,0 +1,77 @@
+import Layout from '../components/Layout';
+import PageHeader from '../components/PageHeader';
+import SectionCard from '../components/SectionCard';
+import MiniDashCard from '../components/MiniDashCard';
+
+export default function Tesi() {
+  return (
+    <Layout section="tesi">
+      <div className="page">
+        <PageHeader icon="📚" title="Lutto nell'era digitale" subtitle="La realtà virtuale come strumento di supporto nell'elaborazione della perdita" />
+
+        <SectionCard title="Info Candidato">
+          <div className="meta-grid">
+            <div className="meta-item"><strong>Candidato:</strong> Gennaro Giordano</div>
+            <div className="meta-item"><strong>Relatore:</strong> Prof. Corrado Piscitelli</div>
+            <div className="meta-item"><strong>Corso:</strong> Multimedia (Design della Comunicazione)</div>
+            <div className="meta-item"><strong>A.A.:</strong> 2025/2026</div>
+            <div className="meta-item"><strong>Framework:</strong> Grief and Growth Therapy</div>
+          </div>
+        </SectionCard>
+
+        <SectionCard title="Domanda di Ricerca">
+          <blockquote>
+            È possibile realizzare un progetto in realtà virtuale che possa supportare l'elaborazione di un lutto, con valenza psico-educativa, utilizzando la Grief and Growth Therapy come framework teorico?
+          </blockquote>
+        </SectionCard>
+
+        <SectionCard title="Motivazione">
+          <p><strong>Personale:</strong> Esperienze di lutto vissute in prima persona — la perdita di un nonno, la separazione dei genitori, la fine di una relazione.</p>
+          <p><strong>Accademica:</strong> Gap nella ricerca — la VR non è mai stata impiegata a fini psico-educativi per l'elaborazione del lutto.</p>
+        </SectionCard>
+
+        <SectionCard title="Obiettivi">
+          <ul>
+            <li>Realizzare un progetto VR che supporti la comprensione e l'elaborazione del lutto</li>
+            <li>Dimostrare che la realtà virtuale può essere uno strumento efficace per l'educazione emotiva</li>
+            <li>Rendere accessibile un tema intimo e complesso tramite un'esperienza immersiva e interattiva</li>
+            <li>Avvicinare utenti inesperti alla VR trattando tematiche profonde</li>
+          </ul>
+        </SectionCard>
+
+        <SectionCard title="Le 6W del Progetto">
+          <div className="tesi-grid tesi-grid-3">
+            {[
+              { icon: '💡', q: 'Why? — Perché', a: 'Mancanza di strumenti digitali per l\'elaborazione del lutto. VR come medium immersivo per Death Education primaria. Framework teorico: Grief and Growth Therapy (GGT).' },
+              { icon: '🎯', q: 'What? — Cosa', a: 'Progetto VR psico-educativo sull\'elaborazione del lutto. Esperienza interattiva da seduti, hand tracking, 15-25 min. Target: utenti in lutto, caregiver, operatori sanitari.' },
+              { icon: '👥', q: 'Who? — Chi', a: 'Destinatari: persone che hanno vissuto un lutto, studenti, educatori, operatori della salute mentale.' },
+              { icon: '⚙️', q: 'How? — Come', a: 'Unity + Meta XR SDK. Hand tracking (no controller). Ricerca teorica → consulenza psicologo → game design → sviluppo.' },
+              { icon: '📍', q: 'Where? — Dove', a: 'Meta Quest (standalone). Distribuzione: da definire (Itch.io, SideQuest, distribuzione accademica).' },
+              { icon: '📅', q: 'When? — Timeline', a: 'Pre-produzione (Sett. 1-6): ricerca, consulenza psicologo, GDD, storyboard. Produzione (Sett. 7-10): sviluppo Unity, ambienti, meccaniche. Post-produzione (Sett. 11-12): testing, build finale.' },
+            ].map(({ icon, q, a }) => (
+              <div className="tesi-card" key={q}>
+                <span className="tesi-icon">{icon}</span>
+                <h3>{q}</h3>
+                <p>{a}</p>
+              </div>
+            ))}
+          </div>
+        </SectionCard>
+
+        <SectionCard title="Metodologia">
+          <p>Ricerca teorica → Consulenza con psicologo → Game design → Sviluppo → Documentazione</p>
+        </SectionCard>
+
+        <SectionCard title="Messaggio">
+          <blockquote>"Più lasci andare il peso, più puoi avvicinarti a chi hai perso."</blockquote>
+        </SectionCard>
+
+        <div className="mini-dash">
+          <MiniDashCard to="/indice" icon="📋" title="Indice" description="Struttura completa della tesi: 3 capitoli, introduzione e conclusioni." />
+          <MiniDashCard to="/bibliografia" icon="📖" title="Bibliografia" description="Fonte principale e fonti secondarie per il framework teorico." />
+          <MiniDashCard to="/documenti" icon="📁" title="Documenti" description="Download della tesi in formato PDF e Word." />
+        </div>
+      </div>
+    </Layout>
+  );
+}
