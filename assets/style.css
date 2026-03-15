@@ -16,7 +16,6 @@
     --text-light: #adb5bd;
     --accent: #2b2d42;
     --accent-light: #8d99ae;
-    --accent-color: #5b7fb5;
     --red: #c9184a;
     --blue: #3a86ff;
     --shadow: rgba(0, 0, 0, 0.04);
@@ -114,8 +113,7 @@ nav {
 .page-header {
     text-align: left;
     margin-bottom: 2.5rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid var(--border-light);
+    padding-bottom: 0;
 }
 
 .page-header h1 {
@@ -126,18 +124,19 @@ nav {
     margin-bottom: 0;
 }
 
-.page-header .subtitle {
-    font-size: 1rem;
+.page-header .subtitle,
+.page-header p.subtitle {
+    font-size: 0.88rem;
     color: var(--text-muted);
-    margin-top: 0.5rem;
+    margin-top: 0.4rem;
+    font-weight: 400;
 }
 
 /* ========== TESI PAGE ========== */
 .tesi-hero {
     text-align: left;
-    padding: 2.5rem 0 2.5rem;
+    padding: 2.5rem 0 0;
     margin-bottom: 2.5rem;
-    border-bottom: 1px solid var(--border-light);
 }
 
 .tesi-hero h1 {
@@ -211,7 +210,7 @@ nav {
 
 .tesi-section blockquote {
     padding: 1.2rem 1.5rem;
-    border-left: 3px solid var(--accent-color);
+    border-left: 3px solid var(--border);
     background: var(--bg-subtle);
     border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
     font-style: italic;
@@ -420,7 +419,7 @@ pre {
     font-weight: 600;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--accent-color);
+    color: var(--text-muted);
 }
 
 .frame-title {
@@ -441,7 +440,7 @@ pre {
 .frame-voice {
     margin-top: auto;
     padding: 0.6rem 1rem;
-    border-left: 3px solid var(--accent-color);
+    border-left: 3px solid var(--border);
     background: var(--bg-subtle);
     border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
     font-style: italic;
@@ -740,7 +739,7 @@ pre {
     margin-top: 2rem;
     padding: 1rem 1.5rem;
     background: var(--bg-subtle);
-    border-left: 3px solid var(--accent-color);
+    border-left: 3px solid var(--border);
     border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
     font-size: 0.85rem;
     color: var(--text-muted);
@@ -919,9 +918,8 @@ pre {
 
 .dashboard-hero {
     text-align: left;
-    padding: 2rem 0 1.5rem;
+    padding: 2rem 0 0;
     margin-bottom: 1.5rem;
-    border-bottom: 1px solid var(--border-light);
 }
 
 .dashboard-hero h1 {
@@ -957,12 +955,10 @@ pre {
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
-    border-left: 3px solid var(--accent-color);
 }
 
 .dash-card:hover {
     border-color: var(--border);
-    border-left-color: var(--accent);
     box-shadow: 0 4px 12px var(--shadow-strong);
     transform: translateY(-1px);
 }
@@ -972,7 +968,7 @@ pre {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: var(--accent-color);
+    color: var(--text-muted);
 }
 
 .dash-card h3 {
@@ -1024,9 +1020,9 @@ pre {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: var(--accent-color);
+    background: var(--accent);
     border: 2px solid var(--bg);
-    box-shadow: 0 0 0 2px var(--accent-color);
+    box-shadow: 0 0 0 2px var(--border);
 }
 
 .timeline-item.done::before { background: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
@@ -1036,7 +1032,7 @@ pre {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    color: var(--accent-color);
+    color: var(--text-muted);
     margin-bottom: 0.2rem;
 }
 
@@ -1172,12 +1168,10 @@ pre {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
-    border-left: 3px solid var(--accent-color);
 }
 
 .mini-dash-card:hover {
     border-color: var(--border);
-    border-left-color: var(--accent);
     box-shadow: 0 4px 12px var(--shadow-strong);
     transform: translateY(-1px);
 }
@@ -1250,7 +1244,7 @@ pre {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    color: var(--accent-color);
+    color: var(--text-muted);
     margin-bottom: 0.8rem;
 }
 
@@ -1324,12 +1318,12 @@ pre {
     top: 1.1rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    background: var(--accent-color);
+    background: var(--accent);
     border: 2px solid var(--bg);
-    box-shadow: 0 0 0 2px var(--accent-color);
+    box-shadow: 0 0 0 2px var(--border);
     z-index: 1;
 }
 
@@ -1338,7 +1332,7 @@ pre {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    color: var(--accent-color);
+    color: var(--text-muted);
     margin-bottom: 0.15rem;
 }
 
@@ -1361,13 +1355,11 @@ pre {
     background: var(--bg-paper);
     border: 1px solid var(--border-light);
     border-radius: var(--radius);
-    border-left: 3px solid var(--accent-color);
     transition: border-color var(--transition), box-shadow var(--transition);
 }
 
 .story-card:hover {
     border-color: var(--border);
-    border-left-color: var(--accent);
     box-shadow: 0 2px 8px var(--shadow);
 }
 
@@ -1377,7 +1369,11 @@ pre {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: var(--accent-color);
+    color: var(--text-muted);
+    background: var(--bg-subtle);
+    padding: 0.15rem 0.6rem;
+    border-radius: 100px;
+    border: 1px solid var(--border-light);
     margin-bottom: 0.4rem;
 }
 
@@ -1413,10 +1409,10 @@ pre {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: var(--accent-color);
+    color: var(--text-muted);
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--accent-color);
+    border-bottom: 2px solid var(--accent);
 }
 
 .tl-card {
@@ -1457,7 +1453,7 @@ pre {
 .tl-card .tl-week span {
     font-size: 1.1rem;
     font-weight: 700;
-    color: var(--accent-color);
+    color: var(--accent);
 }
 
 .tl-card .tl-body { flex: 1; }
@@ -1482,7 +1478,13 @@ pre {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--text-muted);
+    margin-top: 2rem;
     margin-bottom: 0.8rem;
+}
+
+.section-header:first-child,
+.page-header + .section-header {
+    margin-top: 0;
 }
 
 /* ========== FOOTER ========== */

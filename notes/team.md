@@ -18,7 +18,7 @@ Docente di riferimento per la tesi magistrale. Supervisione accademica e guida m
 
 ---
 
-## Miriam Giordano
+## Myriam Giordano
 **Ruolo:** Consulente Psicologica
 
 Psicologa. Consulenza sul framework GGT e validazione dell'approccio psico-educativo dell'esperienza VR.
