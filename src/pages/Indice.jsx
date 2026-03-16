@@ -35,7 +35,7 @@ export default function Indice() {
                 <li>What? — Argomento, titolo, oggetto, framework teorico</li>
                 <li>Why? — Motivazione personale e accademica, obiettivi</li>
                 <li>Who? — Candidato, relatore, collaboratori, destinatari</li>
-                <li>How? — Framework teorico, tecnologia, interazione, metodologia</li>
+                <li>How? — Framework pratico, tecnologia, interazione, metodologia</li>
                 <li>Where? — Piattaforma, distribuzione, documentazione</li>
                 <li>When? — Timeline di produzione</li>
               </ul>
