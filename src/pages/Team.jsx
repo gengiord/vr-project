@@ -1,10 +1,12 @@
 import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
 
+const base = import.meta.env.BASE_URL;
+
 const members = [
-  { name: 'Dott. Gennaro Giordano', role: 'Candidato', desc: 'Studente magistrale in Multimedia (Design della Comunicazione). Autore della tesi, game designer e sviluppatore del progetto VR "Il Viaggio".', photo: '/assets/images/gennaro.jpeg' },
-  { name: 'Prof. Corrado Piscitelli', role: 'Relatore', desc: 'Docente di riferimento per la tesi magistrale. Supervisione accademica e guida metodologica per il progetto.', photo: '/assets/images/corrado.jpeg' },
-  { name: 'Dott.ssa Myriam Giordano', role: 'Consulente Psicologica', desc: 'Psicologa. Consulenza sul framework GGT, validazione delle meccaniche di gioco in relazione ai pilastri terapeutici e supervisione degli aspetti psicologici dell\'esperienza.', photo: '/assets/images/myriam.jpg' },
+  { name: 'Dott. Gennaro Giordano', role: 'Candidato', desc: 'Studente magistrale in Multimedia (Design della Comunicazione). Autore della tesi, game designer e sviluppatore del progetto VR "Il Viaggio".', photo: `${base}assets/images/gennaro.jpeg` },
+  { name: 'Prof. Corrado Piscitelli', role: 'Relatore', desc: 'Docente di riferimento per la tesi magistrale. Supervisione accademica e guida metodologica per il progetto.', photo: `${base}assets/images/corrado.jpeg` },
+  { name: 'Dott.ssa Myriam Giordano', role: 'Consulente Psicologica', desc: 'Psicologa. Consulenza sul framework GGT, validazione delle meccaniche di gioco in relazione ai pilastri terapeutici e supervisione degli aspetti psicologici dell\'esperienza.', photo: `${base}assets/images/myriam.jpg` },
 ];
 
 export default function Team() {

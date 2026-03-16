@@ -4,6 +4,7 @@ export const mainNav = [
   { path: '/progetto', label: 'Progetto', icon: '🎮' },
   { path: '/documenti', label: 'Documenti', icon: '📁' },
   { path: '/team', label: 'Team', icon: '👥' },
+  { path: '/changelog', label: 'Changelog', icon: '📝' },
 ];
 
 export const tesiSub = [
@@ -14,11 +15,10 @@ export const tesiSub = [
 
 export const progettoSub = [
   { path: '/progetto', label: 'Info Generali', icon: '🎮' },
-  { path: '/storia', label: 'Storia', icon: '📖' },
+  { path: '/storia', label: 'Storia & Storyboard', icon: '📖' },
   { path: '/specifiche', label: 'Specifiche Tecniche', icon: '⚙️' },
   { path: '/gameplay', label: 'Gameplay', icon: '🕹️' },
   { path: '/moodboard', label: 'Moodboard', icon: '🎨' },
-  { path: '/storyboard', label: 'Storyboard', icon: '🎬' },
   { path: '/audio', label: 'Audio', icon: '🎵' },
   { path: '/reference', label: 'Reference', icon: '🔗' },
   { path: '/timeline', label: 'Timeline', icon: '📅' },

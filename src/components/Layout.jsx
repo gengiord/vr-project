@@ -11,10 +11,10 @@ export default function Layout({ section, children }) {
   }, [pathname]);
 
   return (
-    <>
+    <div className="site-layout">
       <Navbar section={section} />
-      {children}
+      <main className="site-main">{children}</main>
       <Footer />
-    </>
+    </div>
   );
 }

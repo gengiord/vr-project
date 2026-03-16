@@ -1,6 +1,8 @@
 import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
 
+const base = import.meta.env.BASE_URL;
+
 function RefCard({ title, meta, description, elements, link, linkText, video, image }) {
   return (
     <div className="ref-card">
@@ -44,7 +46,7 @@ export default function Reference() {
           elements="Approccio gamificato al lutto, narrazione in prima persona, struttura a fasi emotive."
           link="https://arxiv.org/abs/2512.17025"
           linkText="Leggi il paper"
-          image="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/K%C3%BCbler-Ross_model.svg/1200px-K%C3%BCbler-Ross_model.svg.png"
+          image={`${base}assets/images/road-to-acceptance.jpeg`}
         />
         <RefCard
           title="That Dragon, Cancer" meta="Numinous Games, 2016"
@@ -67,7 +69,7 @@ export default function Reference() {
           elements="VR clinica per il lutto, ambienti simbolici adattivi, integrazione con CBT."
           link="https://www.researchgate.net/publication/23389624"
           linkText="Leggi il paper"
-          image="https://www.researchgate.net/publication/23389624/figure/fig1/AS:340731285901313@1458245748498/mage-of-EMMAs-World-the-Book-of-Life-and-different-aspects-of-the-virtual-environment.png"
+          image={`${base}assets/images/emmas-world.webp`}
         />
         <RefCard
           title="Traces: The Grief Processor" meta="Vali Fugulin / Couzin Films, 2025"

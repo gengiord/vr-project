@@ -11,11 +11,11 @@ import Storia from './pages/Storia';
 import Specifiche from './pages/Specifiche';
 import Gameplay from './pages/Gameplay';
 import Moodboard from './pages/Moodboard';
-import Storyboard from './pages/Storyboard';
 import Audio from './pages/Audio';
 import Reference from './pages/Reference';
 import Timeline from './pages/Timeline';
 import Team from './pages/Team';
+import Changelog from './pages/Changelog';
 
 export default function App() {
   return (
@@ -30,11 +30,11 @@ export default function App() {
       <Route path="/specifiche" element={<Specifiche />} />
       <Route path="/gameplay" element={<Gameplay />} />
       <Route path="/moodboard" element={<Moodboard />} />
-      <Route path="/storyboard" element={<Storyboard />} />
       <Route path="/audio" element={<Audio />} />
       <Route path="/reference" element={<Reference />} />
       <Route path="/timeline" element={<Timeline />} />
       <Route path="/team" element={<Team />} />
+      <Route path="/changelog" element={<Changelog />} />
     </Routes>
   );
 }
