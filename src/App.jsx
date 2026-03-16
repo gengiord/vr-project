@@ -16,6 +16,7 @@ import Team from './pages/Team';
 import Changelog from './pages/Changelog';
 import NotFound from './pages/NotFound';
 import Presentazione from './pages/Presentazione';
+import Domande from './pages/Domande';
 
 export default function App() {
   return (
@@ -34,6 +35,7 @@ export default function App() {
       <Route path="/team" element={<Team />} />
       <Route path="/changelog" element={<Changelog />} />
       <Route path="/presentazione" element={<Presentazione />} />
+      <Route path="/domande" element={<Domande />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

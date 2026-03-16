@@ -30,6 +30,11 @@ export default function Home() {
           <DashCard to="/team" icon="👥" title="Team" description="Candidato, relatore e consulente psicologica." />
           <DashCard to="/documenti" icon="📁" title="Documenti" description="Tesi, presentazione e gioco VR disponibili per il download." />
         </div>
+
+        <h2 className="section-header">Note di Lavoro</h2>
+        <div className="dashboard-grid">
+          <DashCard to="/domande" icon="❓" title="Domande per il Relatore" description="Scope, sviluppo vs prototipazione, comunicazione, companion app e timeline." />
+        </div>
       </div>
     </Layout>
   );

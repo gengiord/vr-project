@@ -3006,6 +3006,33 @@ pre {
 .pres-end-link:hover { background: rgba(255,255,255,0.14); color: #fff; }
 .pres-end-footer { font-size: 0.72rem; color: rgba(255,255,255,0.2); text-transform: uppercase; letter-spacing: 0.1em; }
 
+/* Domande */
+.questions-list { display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2rem; }
+.question-card {
+  background: var(--bg-paper);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.75rem;
+}
+.question-header { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.25rem; }
+.question-icon { font-size: 2rem; flex-shrink: 0; margin-top: 0.2rem; }
+.question-meta { display: flex; flex-direction: column; gap: 0.4rem; }
+.question-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #fff;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  width: fit-content;
+}
+.question-title { font-size: 1.15rem; font-weight: 700; color: var(--text); margin: 0; line-height: 1.35; }
+.question-number { color: var(--text-light); font-weight: 400; margin-right: 0.3rem; }
+.question-body { color: var(--text-muted); font-size: 0.92rem; line-height: 1.7; display: flex; flex-direction: column; gap: 0.5rem; }
+.question-body p { margin: 0; }
+
 /* Responsive presentazione */
 @media (max-width: 768px) {
   .pres-stage { padding: 1rem 3.5rem; }

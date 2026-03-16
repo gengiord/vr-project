@@ -4,6 +4,16 @@ import SectionCard from '../components/SectionCard';
 
 const changelog = [
   {
+    version: 'v1.6',
+    date: '16 marzo 2026',
+    type: 'feature',
+    items: [
+      'Aggiunta pagina Domande per il Relatore — scope, sviluppo vs prototipazione, comunicazione, companion app, timeline',
+      'Fix deploy GitHub Pages: migrazione da BrowserRouter a HashRouter per compatibilità routing',
+      'Fix CSS pagina Domande: colori adattati al light theme del sito',
+    ],
+  },
+  {
     version: 'v1.5',
     date: '16 marzo 2026',
     type: 'feature',
