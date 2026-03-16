@@ -10,12 +10,22 @@ export default function Tesi() {
         <PageHeader icon="📚" title="Lutto nell'era digitale" subtitle="La realtà virtuale come strumento di supporto nell'elaborazione della perdita" />
 
         <SectionCard title="Info Candidato">
-          <div className="meta-grid">
-            <div className="meta-item"><strong>Candidato:</strong> Gennaro Giordano</div>
-            <div className="meta-item"><strong>Relatore:</strong> Prof. Corrado Piscitelli</div>
-            <div className="meta-item"><strong>Corso:</strong> Multimedia (Design della Comunicazione)</div>
-            <div className="meta-item"><strong>A.A.:</strong> 2025/2026</div>
-            <div className="meta-item"><strong>Framework:</strong> Grief and Growth Therapy</div>
+          <div className="candidate-info">
+            {[
+              { icon: '👤', label: 'Candidato', value: 'Gennaro Giordano' },
+              { icon: '👨‍🏫', label: 'Relatore', value: 'Prof. Corrado Piscitelli' },
+              { icon: '🎓', label: 'Corso', value: 'Multimedia (Design della Comunicazione)' },
+              { icon: '📅', label: 'Anno Accademico', value: '2025/2026' },
+              { icon: '🧠', label: 'Framework', value: 'Grief and Growth Therapy' },
+            ].map(({ icon, label, value }) => (
+              <div className="candidate-item" key={label}>
+                <span className="candidate-icon">{icon}</span>
+                <div className="candidate-content">
+                  <span className="candidate-label">{label}</span>
+                  <span className="candidate-value">{value}</span>
+                </div>
+              </div>
+            ))}
           </div>
         </SectionCard>
 

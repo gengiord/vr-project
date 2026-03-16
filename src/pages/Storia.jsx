@@ -99,7 +99,6 @@ const acts = [
 const allFrames = acts.flatMap(a => a.frames);
 
 export default function Storia() {
-  const [tab, setTab] = useState('storia');
   const [lightbox, setLightbox] = useState(null);
 
   const openLightbox = useCallback((i) => setLightbox(i), []);
@@ -116,99 +115,65 @@ export default function Storia() {
   return (
     <Layout section="progetto">
       <div className="page">
-        <PageHeader icon="📖" title="Storia & Storyboard" subtitle="Un viaggio attraverso le fasi del lutto — 15-25 minuti" />
+        <PageHeader icon="📖" title="Storia" subtitle="Un viaggio attraverso le fasi del lutto — 15-25 minuti" />
 
-        <div className="tabs">
-          <button className={`tab-btn${tab === 'storia' ? ' active' : ''}`} onClick={() => setTab('storia')}>
-            📖 Storia
-          </button>
-          <button className={`tab-btn${tab === 'storyboard' ? ' active' : ''}`} onClick={() => setTab('storyboard')}>
-            🎬 Storyboard
-          </button>
-        </div>
-
-        {tab === 'storia' && (
-          <>
-            <div className="story-timeline">
-              <div className="timeline-header">
-                <h3>Struttura Narrativa</h3>
-                <p>Un percorso emotivo guidato, basato sul modello Grief and Growth Therapy</p>
-              </div>
-              <div className="timeline-flow">
-                {acts.map((act, index) => (
-                  <div className="timeline-item" key={act.phase}>
-                    <div className="timeline-marker" style={{ backgroundColor: act.color }}>
-                      <span className="timeline-phase">{act.phase}</span>
-                    </div>
-                    <div className="timeline-content">
-                      <div className="timeline-title">{act.title}</div>
-                      <div className="timeline-time">{act.time}</div>
-                      <div className="timeline-desc">{act.emotionArc}</div>
-                    </div>
-                    {index < acts.length - 1 && <div className="timeline-connector" />}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="story-sections">
-              {acts.map(act => (
-                <div className="story-card" key={act.phase}>
-                  <div className="story-tag">{act.phase}</div>
-                  <div className="story-emotion">{act.emotionArc}</div>
-                  <h2>{act.title}</h2>
-                  <div className="story-details">
-                    {act.details.map(d => (
-                      <div className="story-environment" key={d.label}>
-                        <h4>{d.icon} {d.label}</h4>
-                        <p>{d.text}</p>
-                      </div>
-                    ))}
-                  </div>
+        <div className="story-timeline">
+          <div className="timeline-header">
+            <h3>Struttura Narrativa</h3>
+            <p>Un percorso emotivo guidato, basato sul modello Grief and Growth Therapy</p>
+          </div>
+          <div className="timeline-flow">
+            {acts.map((act, index) => (
+              <div className="timeline-item" key={act.phase}>
+                <div className="timeline-marker" style={{ backgroundColor: act.color }}>
+                  <span className="timeline-phase">{act.phase}</span>
                 </div>
-              ))}
-            </div>
-          </>
-        )}
-
-        {tab === 'storyboard' && (
-          <>
-            {acts.map(act => (
-              <div key={act.phase}>
-                <h2 className="section-header">{act.phase} — {act.title}</h2>
-                {act.frames.map((f, fi) => {
-                  const globalIndex = allFrames.findIndex(x => x.num === f.num);
-                  return (
-                    <div className="frame-card" key={f.num}>
-                      <div className="frame-text">
-                        <span className="frame-number">Frame {f.num}</span>
-                        <h3 className="frame-title">{f.title}</h3>
-                        <p className="frame-description">{f.desc}</p>
-                        <div className="frame-voice">{f.voice}</div>
-                      </div>
-                      <div className="frame-image" onClick={() => openLightbox(globalIndex)} style={{ cursor: 'pointer' }}>
-                        <img src={`assets/images/${f.num}.png`} alt={`Frame ${f.num}`} />
-                      </div>
-                    </div>
-                  );
-                })}
+                <div className="timeline-content">
+                  <div className="timeline-title">{act.title}</div>
+                  <div className="timeline-time">{act.time}</div>
+                  <div className="timeline-desc">{act.emotionArc}</div>
+                </div>
+                {index < acts.length - 1 && <div className="timeline-connector" />}
               </div>
             ))}
+          </div>
+        </div>
 
-            <h2 className="section-header">Galleria — Concept Art</h2>
-            <div className="gallery-grid">
-              {allFrames.map((f, i) => (
-                <div className="gallery-item" key={f.num} onClick={() => openLightbox(i)}>
-                  <img src={`assets/images/${f.num}.png`} alt={`Frame ${f.num}`} />
-                  <div className="overlay">
-                    <span className="g-number">Frame {f.num}</span>
-                    <div className="g-title">{f.title}</div>
+        <h2 className="section-header">Storyboard</h2>
+        {acts.map(act => (
+          <div key={act.phase}>
+            <h3 className="section-header">{act.phase} — {act.title}</h3>
+            {act.frames.map((f) => {
+              const globalIndex = allFrames.findIndex(x => x.num === f.num);
+              return (
+                <div className="frame-card" key={f.num}>
+                  <div className="frame-text">
+                    <span className="frame-number">Frame {f.num}</span>
+                    <h3 className="frame-title">{f.title}</h3>
+                    <p className="frame-description">{f.desc}</p>
+                    <div className="frame-voice">{f.voice}</div>
+                  </div>
+                  <div className="frame-image" onClick={() => openLightbox(globalIndex)} style={{ cursor: 'pointer' }}>
+                    <img src={`assets/images/${f.num}.png`} alt={`Frame ${f.num}`} />
                   </div>
                 </div>
-              ))}
+              );
+            })}
+          </div>
+        ))}
+
+        <h2 className="section-header">Galleria — Concept Art</h2>
+        <div className="gallery-grid">
+          {allFrames.map((f, i) => (
+            <div className="gallery-item" key={f.num} onClick={() => openLightbox(i)}>
+              <img src={`assets/images/${f.num}.png`} alt={`Frame ${f.num}`} />
+              <div className="overlay">
+                <span className="g-number">Frame {f.num}</span>
+                <div className="g-title">{f.title}</div>
+              </div>
             </div>
-          </>
-        )}
+          ))}
+        </div>
       </div>
 
       {lightbox !== null && (

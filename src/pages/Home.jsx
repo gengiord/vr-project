@@ -18,17 +18,14 @@ export default function Home() {
         <h2 className="section-header">Progetto VR</h2>
         <div className="dashboard-grid">
           <DashCard to="/progetto" icon="🎮" title="Game Design" description="Info generali, principi di design e navigazione del progetto." />
-          <DashCard to="/storia" icon="📖" title="Storia" description="Struttura narrativa: Prologo, 3 Atti, Epilogo." />
+          <DashCard to="/storia" icon="📖" title="Storia" description="Struttura narrativa, 20 frame con concept art e galleria." />
           <DashCard to="/specifiche" icon="⚙️" title="Specifiche Tecniche" description="Software, SDK, strumenti AI e gameplay." />
-          <DashCard to="/moodboard" icon="🎨" title="Moodboard" description="Stile visivo, palette cromatiche, ambienti e reference visivi." />
-          <DashCard to="/storyboard" icon="🎬" title="Storyboard" description="20 frame con testo, concept art e galleria." />
-          <DashCard to="/audio" icon="🎵" title="Audio" description="Voce narrante, musica e SFX." />
-          <DashCard to="/gameplay" icon="🕹️" title="Gameplay" description="Gesture, interazioni e meccaniche di gioco." />
-          <DashCard to="/reference" icon="🔗" title="Reference" description="Progetti VR ispiratori e fonti artistiche per lo stile visivo." />
+          <DashCard to="/moodboard" icon="🎨" title="Moodboard & Reference" description="Stile visivo, palette, concept art e riferimenti ispiratori." />
+          <DashCard to="/gameplay" icon="🕹️" title="Gameplay" description="Gesture, interazioni, meccaniche di gioco e audio." />
           <DashCard to="/timeline" icon="📅" title="Timeline" description="Pianificazione su 12 settimane." />
         </div>
 
-        <h2 className="section-header">Varie</h2>
+        <h2 className="section-header">Risorse</h2>
         <div className="dashboard-grid">
           <DashCard to="/team" icon="👥" title="Team" description="Candidato, relatore e consulente psicologica." />
           <DashCard to="/documenti" icon="📁" title="Documenti" description="Tesi, presentazione e gioco VR disponibili per il download." />

@@ -2,7 +2,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { mainNav, tesiSub, progettoSub } from '../data/navigation';
 
 const tesiPaths = ['/tesi', '/indice', '/bibliografia'];
-const progettoPaths = ['/progetto', '/storia', '/specifiche', '/gameplay', '/moodboard', '/audio', '/reference', '/timeline'];
+const progettoPaths = ['/progetto', '/storia', '/specifiche', '/gameplay', '/moodboard', '/timeline'];
 
 export default function Navbar({ section }) {
   const subNav = section === 'tesi' ? tesiSub : section === 'progetto' ? progettoSub : null;

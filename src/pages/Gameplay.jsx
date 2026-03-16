@@ -3,6 +3,8 @@ import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
 import SectionCard from '../components/SectionCard';
 
+const base = import.meta.env.BASE_URL;
+
 const phases = [
   {
     id: 'prologo',
@@ -53,7 +55,7 @@ const phases = [
       { icon: '💧', name: 'Splash luminoso', detail: 'Al contatto con l\'acqua: splash 3D, onda circolare di luce azzurra, nota musicale unica per ogni pietra.' },
       { icon: '👤', name: 'Sagoma che si avvicina', detail: 'Ad ogni lancio, la figura dorata in lontananza si avvicina di un passo. Dopo 6 lanci, è a 2 metri dal giocatore.' },
     ],
-    designNotes: 'L\'ordine dei lanci è libero. Il giocatore può lanciare le pietre tutte in fretta o prendersi il tempo per leggere ogni frase. Nessuna fretta. L\'acqua si schiarisce progressivamente ad ogni lancio.',
+    designNotes: 'L\'ordine dei lanci è libero. Il giocatore può lanciare le pietre tutte in fretta o prendersi il tempo per leggere ogni frase. L\'acqua si schiarisce progressivamente ad ogni lancio.',
     transition: 'Ultima pietra lanciata → silenzio → la sagoma è di fronte.',
   },
   {
@@ -104,6 +106,14 @@ const gestures = [
   { name: 'Finger wiggle', icon: '🖐️', desc: 'Muovere le dita rapidamente', zone: 'Davanti al corpo', uses: 'Gabbiani nell\'Epilogo' },
 ];
 
+const narrationDensity = [
+  { phase: 'Prologo', density: 'Alta', note: 'Guida tutorial — ogni gesto è annunciato e confermato' },
+  { phase: 'Atto 1', density: 'Media', note: 'Frasi brevi prima e dopo i momenti chiave' },
+  { phase: 'Atto 2', density: 'Bassa', note: 'Solo inizio e fine. I lanci avvengono in silenzio' },
+  { phase: 'Atto 3', density: 'Minima', note: 'Solo introduzione. Il dialogo è del giocatore' },
+  { phase: 'Epilogo', density: 'Media', note: 'Tre frasi di chiusura. Poi silenzio e musica' },
+];
+
 export default function Gameplay() {
   const [tab, setTab] = useState('panoramica');
   const [openPhase, setOpenPhase] = useState(null);
@@ -126,14 +136,17 @@ export default function Gameplay() {
           <button className={`tab-btn${tab === 'feedback' ? ' active' : ''}`} onClick={() => setTab('feedback')}>
             🔊 Feedback & Design
           </button>
+          <button className={`tab-btn${tab === 'audio' ? ' active' : ''}`} onClick={() => setTab('audio')}>
+            🎵 Audio
+          </button>
         </div>
 
         {/* ===== PANORAMICA ===== */}
         {tab === 'panoramica' && (
           <>
             <SectionCard title="Principio di Interazione">
-              <p>Tutto avviene nella <strong>comfort zone del hand tracking da seduti</strong>: circa 60×60 cm davanti al busto, tra vita e spalle. Il mondo arriva al giocatore — non il contrario. Gli oggetti fluttuano sempre nell'area raggiungibile senza sforzo. Il giocatore è il centro immobile dell'esperienza.</p>
-              <p style={{ marginTop: '0.75rem' }}>Escursione massima 30–40 cm. Il gomito non sale mai sopra la spalla. Tutti i gesti corrispondono a movimenti quotidiani da seduti: prendere un bicchiere, girare una chiave, lanciare un sasso in un lago.</p>
+              <p>Il Viaggio usa esclusivamente il <strong>Meta XR Hand Tracking SDK</strong> — nessun controller fisico. Le mani del giocatore sono la sola interfaccia. Tutto avviene nella <strong>comfort zone da seduti</strong>: il giocatore resta fermo mentre il mondo si avvicina a lui. Gli oggetti fluttuano sempre nell'area raggiungibile senza sforzo.</p>
+              <p style={{ marginTop: '0.75rem' }}>Ogni gesto corrisponde a un movimento quotidiano: prendere un bicchiere, girare una chiave, lanciare un sasso in un lago. Le dimensioni esatte e i parametri tecnici sono nella scheda <strong>Gesture</strong>.</p>
             </SectionCard>
 
             <SectionCard title="Filosofia del No-Fail">
@@ -141,13 +154,13 @@ export default function Gameplay() {
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginTop: '1rem' }}>
                 {[
                   { icon: '⏳', label: 'Nessun timer', desc: 'Il giocatore si prende il tempo che vuole in ogni fase.' },
-                  { icon: '♾️', name: 'Retry infiniti', desc: 'Se un gesto non va a buon fine, l\'oggetto ritorna in posizione.' },
+                  { icon: '♾️', label: 'Retry infiniti', desc: 'Se un gesto non va a buon fine, l\'oggetto ritorna in posizione.' },
                   { icon: '🤝', label: 'Assistenza magnetica', desc: 'Snap automatico per inserimento chiave e posizionamento oggetti.' },
                   { icon: '🛡️', label: 'Tolleranza gesture', desc: 'Il sistema accetta approssimazioni: un lancio impreciso conta comunque.' },
                 ].map(item => (
-                  <div key={item.label || item.name} style={{ background: 'var(--bg-subtle)', borderRadius: 'var(--radius-sm)', padding: '1rem' }}>
+                  <div key={item.label} style={{ background: 'var(--bg-subtle)', borderRadius: 'var(--radius-sm)', padding: '1rem' }}>
                     <div style={{ fontSize: '1.5rem', marginBottom: '0.4rem' }}>{item.icon}</div>
-                    <strong style={{ display: 'block', marginBottom: '0.25rem' }}>{item.label || item.name}</strong>
+                    <strong style={{ display: 'block', marginBottom: '0.25rem' }}>{item.label}</strong>
                     <span style={{ color: 'var(--text-muted)', fontSize: '0.875rem' }}>{item.desc}</span>
                   </div>
                 ))}
@@ -173,23 +186,6 @@ export default function Gameplay() {
                   </div>
                 ))}
               </div>
-            </SectionCard>
-
-            <SectionCard title="Hand Tracking — Note Tecniche">
-              <p>Il progetto utilizza esclusivamente il <strong>Meta XR Hand Tracking SDK</strong>. Nessun controller fisico. Le mani del giocatore sono la sola interfaccia.</p>
-              <table style={{ marginTop: '1rem' }}>
-                <thead>
-                  <tr><th>Aspetto</th><th>Soluzione</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td>Riconoscimento gesture</td><td>OVRHand + Hand Pose Detection — soglie di confidenza calibrate per uso seduto</td></tr>
-                  <tr><td>Grab detection</td><td>Pinch strength threshold (~0.7) + finger curl detection</td></tr>
-                  <tr><td>Throw velocity</td><td>Campionamento velocità polso negli ultimi 5 frame al momento del release</td></tr>
-                  <tr><td>Snap magnetico</td><td>Trigger zone sferica intorno alla serratura — la chiave si "aggancia" automaticamente entro 15 cm</td></tr>
-                  <tr><td>Comfort zone enforcement</td><td>Gli oggetti interattivi non escono mai dall'area 60×60 cm. Posizionamento procedurale.</td></tr>
-                  <tr><td>Latenza percepita</td><td>Feedback visivo (glow sull'oggetto) anticipato di ~2 frame rispetto all'audio per compensare la latenza aptica</td></tr>
-                </tbody>
-              </table>
             </SectionCard>
           </>
         )}
@@ -263,7 +259,7 @@ export default function Gameplay() {
         {tab === 'gesture' && (
           <>
             <SectionCard title="Sistema di Gesture">
-              <p style={{ marginBottom: '1.25rem' }}>Tutti i gesti sono progettati per essere eseguibili da seduti, senza alzare il gomito sopra la spalla, con un'escursione massima di 30–40 cm. Corrispondono a movimenti naturali della vita quotidiana.</p>
+              <p style={{ marginBottom: '1.25rem' }}>9 gesti, tutti eseguibili da seduti con movimenti naturali della vita quotidiana.</p>
               <table>
                 <thead>
                   <tr><th>Gesture</th><th>Descrizione</th><th>Zona</th><th>Utilizzata in</th></tr>
@@ -281,9 +277,9 @@ export default function Gameplay() {
               </table>
             </SectionCard>
 
-            <SectionCard title="Comfort Zone — Schema">
-              <p>Il seguente schema descrive l'area di interazione progettata per il giocatore seduto con Meta Quest 2.</p>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem', marginTop: '1rem' }}>
+            <SectionCard title="Comfort Zone">
+              <p style={{ marginBottom: '1rem' }}>L'area di interazione progettata per il giocatore seduto con Meta Quest 2.</p>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem' }}>
                 {[
                   { label: 'Larghezza', value: '~60 cm', desc: 'Da spalla a spalla, centrata sul busto' },
                   { label: 'Altezza', value: '~60 cm', desc: 'Dalla vita fino alle spalle' },
@@ -299,22 +295,11 @@ export default function Gameplay() {
               </div>
             </SectionCard>
 
-            <SectionCard title="Principi di Riconoscimento">
-              <table>
-                <thead>
-                  <tr><th>Gesture</th><th>Trigger tecnico</th><th>Soglia</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td>Grab</td><td>Pinch strength + finger curl su tutte le dita</td><td>≥ 0.7 su indice+medio+anulare</td></tr>
-                  <tr><td>Release</td><td>Pinch strength drop + apertura mano</td><td>≤ 0.3</td></tr>
-                  <tr><td>Tap</td><td>Contatto dito indice con collider dell'oggetto</td><td>Velocità contatto ≥ 5 cm/s</td></tr>
-                  <tr><td>Throw</td><td>Velocity polso al momento del release</td><td>≥ 1.2 m/s in direzione avanti/alto</td></tr>
-                  <tr><td>Push</td><td>Palmo aperto + movimento in avanti</td><td>Pinch ≤ 0.2 + velocity ≥ 0.8 m/s</td></tr>
-                  <tr><td>Wrist rotation</td><td>Delta rotation asse Y polso</td><td>≥ 80° in 0.5–2s</td></tr>
-                  <tr><td>Palms up</td><td>Rotazione palm verso l'alto + braccia basse</td><td>Palm normal dot(up) ≥ 0.8</td></tr>
-                  <tr><td>Hands together</td><td>Distanza tra palmi ≤ 5 cm + altezza petto</td><td>Proximity threshold + height range</td></tr>
-                </tbody>
-              </table>
+            <SectionCard title="Implementazione Tecnica">
+              <p>Hand Tracking via <strong>Meta XR SDK</strong> (OVRHand + Hand Pose Detection). Soglie di confidenza calibrate per uso seduto. Gli oggetti interattivi non escono mai dalla comfort zone — posizionamento procedurale.</p>
+              <p style={{ marginTop: '1rem', fontSize: '0.875rem', color: 'var(--text-muted)' }}>
+                <strong>Snap magnetico:</strong> trigger zone sferica (15 cm) intorno alla serratura — la chiave si aggancia automaticamente. <strong>Latenza:</strong> feedback visivo anticipato di ~2 frame rispetto all'audio.
+              </p>
             </SectionCard>
           </>
         )}
@@ -322,7 +307,7 @@ export default function Gameplay() {
         {/* ===== FEEDBACK & DESIGN ===== */}
         {tab === 'feedback' && (
           <>
-            <SectionCard title="Sistema di Feedback Multimodale">
+            <SectionCard title="Feedback Multimodale">
               <p style={{ marginBottom: '1.25rem' }}>Ogni interazione produce feedback su tre canali simultanei, calibrati per amplificare la risposta emotiva senza sovraccaricare i sensi.</p>
               <table>
                 <thead>
@@ -339,37 +324,8 @@ export default function Gameplay() {
                     <td>SFX spaziale 3D, note musicali, ambience</td>
                     <td>Clang metallico, splash acqua, nota cristallina per sfera-parola, silenzio intenzionale</td>
                   </tr>
-                  <tr>
-                    <td><strong>📳 Aptico</strong></td>
-                    <td>Vibrazione controller (se usato) / feedback visivo anticipato</td>
-                    <td>Impulso breve al grab, vibrazione lunga al colpo, assente nelle fasi emotive più intime</td>
-                  </tr>
                 </tbody>
               </table>
-            </SectionCard>
-
-            <SectionCard title="Voce Narrante — Timing e Densità">
-              <p>La voce narrante (ElevenLabs, voce italiana calma e profonda) parla solo per circa il <strong>7% del tempo totale</strong> — circa 1 minuto e 40 secondi su 15–25 minuti di esperienza.</p>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginTop: '1rem' }}>
-                {[
-                  { phase: 'Prologo', density: 'Alta', note: 'Guida tutorial — ogni gesto è annunciato e confermato' },
-                  { phase: 'Atto 1', density: 'Media', note: 'Frasi brevi prima e dopo i momenti chiave' },
-                  { phase: 'Atto 2', density: 'Bassa', note: 'Solo inizio e fine. I lanci avvengono in silenzio' },
-                  { phase: 'Atto 3', density: 'Minima', note: 'Solo introduzione. Il dialogo è del giocatore' },
-                  { phase: 'Epilogo', density: 'Media', note: 'Tre frasi di chiusura. Poi silenzio e musica' },
-                ].map(item => (
-                  <div key={item.phase} style={{ background: 'var(--bg-subtle)', borderRadius: 'var(--radius-sm)', padding: '1rem' }}>
-                    <strong style={{ display: 'block' }}>{item.phase}</strong>
-                    <span style={{
-                      display: 'inline-block', marginTop: '0.3rem', marginBottom: '0.5rem',
-                      padding: '0.15rem 0.5rem', borderRadius: 4, fontSize: '0.75rem',
-                      background: item.density === 'Alta' ? '#c9184a22' : item.density === 'Media' ? '#3a86ff22' : '#6c757d22',
-                      color: item.density === 'Alta' ? '#c9184a' : item.density === 'Media' ? '#3a86ff' : 'var(--text-muted)',
-                    }}>{item.density}</span>
-                    <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{item.note}</p>
-                  </div>
-                ))}
-              </div>
             </SectionCard>
 
             <SectionCard title="Progressione degli Oggetti Interattivi">
@@ -397,8 +353,104 @@ export default function Gameplay() {
                   <tr><td>Mobilità ridotta degli arti superiori</td><td>Tutti i gesti richiedono movimenti minimi (max 40 cm). Nessun gesto richiede forza o velocità elevata.</td></tr>
                   <tr><td>Dominanza della mano</td><td>Il sistema funziona simmetricamente con entrambe le mani. Gli oggetti si adattano alla mano che si avvicina.</td></tr>
                   <tr><td>Comfort in VR (nausea)</td><td>Esperienza completamente seduta. Nessuna locomozione. Nessun cambio di prospettiva brusco. Fade/dissolvenza tra scene.</td></tr>
-                  <tr><td>Velocità di esecuzione</td><td>Nessun timer. Il giocatore può fermarsi in qualsiasi momento. Gli oggetti aspettano.</td></tr>
                   <tr><td>Comprensione dei gesti</td><td>Il tutorial del Prologo può essere ripetuto. La voce narrante suggerisce senza imporre.</td></tr>
+                </tbody>
+              </table>
+            </SectionCard>
+          </>
+        )}
+
+        {/* ===== AUDIO ===== */}
+        {tab === 'audio' && (
+          <>
+            <SectionCard title="Voce Narrante">
+              <p style={{ marginBottom: '1rem' }}>38 battute — circa <strong>1m 40s su 15–25 min totali (~7% del tempo)</strong>. Calma, profonda, intima. Non clinica, non teatrale. Una voce che accompagna senza giudicare.</p>
+              <div className="candidate-info" style={{ marginTop: '0.75rem', marginBottom: '1.5rem' }}>
+                {[
+                  { icon: '🎙️', label: 'Servizio', value: 'ElevenLabs' },
+                  { icon: '🧠', label: 'Modello', value: 'Multilingual v3' },
+                  { icon: '🇮🇹', label: 'Voce', value: 'Italiana Custom' },
+                ].map(({ icon, label, value }) => (
+                  <div className="candidate-item" key={label}>
+                    <span className="candidate-icon">{icon}</span>
+                    <div className="candidate-content">
+                      <span className="candidate-label">{label}</span>
+                      <span className="candidate-value">{value}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <h4 style={{ fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--text-muted)', marginBottom: '0.75rem' }}>Densità per fase</h4>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '0.75rem', marginBottom: '1.5rem' }}>
+                {narrationDensity.map(item => (
+                  <div key={item.phase} style={{ background: 'var(--bg-subtle)', borderRadius: 'var(--radius-sm)', padding: '0.875rem' }}>
+                    <strong style={{ display: 'block' }}>{item.phase}</strong>
+                    <span style={{
+                      display: 'inline-block', marginTop: '0.3rem', marginBottom: '0.5rem',
+                      padding: '0.15rem 0.5rem', borderRadius: 4, fontSize: '0.75rem',
+                      background: item.density === 'Alta' ? '#c9184a22' : item.density === 'Media' ? '#3a86ff22' : '#6c757d22',
+                      color: item.density === 'Alta' ? '#c9184a' : item.density === 'Media' ? '#3a86ff' : 'var(--text-muted)',
+                    }}>{item.density}</span>
+                    <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{item.note}</p>
+                  </div>
+                ))}
+              </div>
+
+              <h4 style={{ fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--text-muted)', marginBottom: '0.75rem' }}>Esempi audio</h4>
+              <div className="audio-examples">
+                <div className="audio-item">
+                  <h4>Voce 1 - Tutorial Prologo</h4>
+                  <audio controls src={`${base}assets/audio/audio1.mp3`} />
+                  <div className="audio-transcript">
+                    <p><strong>Testo:</strong> "Più lasci andare il peso... più puoi avvicinarti a chi hai perso."</p>
+                  </div>
+                </div>
+                <div className="audio-item">
+                  <h4>Voce 2 - Atto del Fuoco</h4>
+                  <audio controls src={`${base}assets/audio/audio2.mp3`} />
+                  <div className="audio-transcript">
+                    <p><strong>Testo:</strong> "Ora prova a toccare la sfera... senti come risponde al tuo tocco."</p>
+                  </div>
+                </div>
+                <div className="audio-item">
+                  <h4>Voce 3 - Atto dell'Acqua</h4>
+                  <audio controls src={`${base}assets/audio/audio3.mp3`} />
+                  <div className="audio-transcript">
+                    <p><strong>Testo:</strong> "L'alba non cancella la notte... ma la trasforma in luce."</p>
+                  </div>
+                </div>
+              </div>
+            </SectionCard>
+
+            <SectionCard title="Musica — Colonna Sonora">
+              <table>
+                <thead>
+                  <tr><th>Fase</th><th>Stile musicale</th><th>Mood</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Prologo</td><td>Silenzio → battito lento</td><td>Vulnerabilità, attesa</td></tr>
+                  <tr><td>Atto 1 — Fucina</td><td>Drone profondo, percussivo</td><td>Potenza, calore</td></tr>
+                  <tr><td>Atto 1 — Porta</td><td>Silenzio teso</td><td>Mistero, soglia</td></tr>
+                  <tr><td>Atto 2 — Mare</td><td>Archi bassi, crescente</td><td>Malinconia, rilascio</td></tr>
+                  <tr><td>Atto 3 — Incontro</td><td>Melodia emotiva, piano</td><td>Intimità, pace</td></tr>
+                  <tr><td>Epilogo — Alba</td><td>Crescendo → pace</td><td>Rinascita, speranza</td></tr>
+                </tbody>
+              </table>
+            </SectionCard>
+
+            <SectionCard title="SFX — Effetti Sonori">
+              <table>
+                <thead>
+                  <tr><th>Fase</th><th>Ambience</th><th>Feedback interazione</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Prologo</td><td>Sfere luminose, toni delicati</td><td>Tap: tono cristallino. Grab: suono morbido. Throw: whoosh.</td></tr>
+                  <tr><td>Atto 1 — Fucina</td><td>Braci, scintille, calore</td><td>Martellate: impatto metallico + scintille. Chiave: tono rivelazione.</td></tr>
+                  <tr><td>Atto 1 — Porta</td><td>Chiave nella serratura, meccanismo</td><td>Rotazione: click meccanico. Apertura: rumble basso.</td></tr>
+                  <tr><td>Atto 2 — Mare</td><td>Mare, onde, vento notturno</td><td>Lancio pietra: whoosh → splash. Onda luminosa: shimmer.</td></tr>
+                  <tr><td>Atto 3 — Incontro</td><td>Mare calmo, vento stellato</td><td>Tocco sfera-parola: cristallo + risonanza. Dissoluzione: particelle.</td></tr>
+                  <tr><td>Epilogo — Alba</td><td>Mare al mattino, gabbiani, luce</td><td>Gesti creativi: suoni generativi diversi per ogni gesto.</td></tr>
                 </tbody>
               </table>
             </SectionCard>

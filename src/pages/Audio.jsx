@@ -12,9 +12,21 @@ export default function Audio() {
 
         <SectionCard title="Voce Narrante">
           <p>38 battute — ~1m 40s su 15-25 min (~7% del tempo). Calma, profonda, intima. Non clinica, non teatrale. Una voce che accompagna senza giudicare.</p>
-          <div className="spec-item"><strong>Servizio</strong> ElevenLabs</div>
-          <div className="spec-item"><strong>Modello</strong> Multilingual v3</div>
-          <div className="spec-item"><strong>Voce</strong> Italiana Custom</div>
+          <div className="candidate-info" style={{ marginTop: '1rem', marginBottom: '1.25rem' }}>
+            {[
+              { icon: '🎙️', label: 'Servizio', value: 'ElevenLabs' },
+              { icon: '🧠', label: 'Modello', value: 'Multilingual v3' },
+              { icon: '🇮🇹', label: 'Voce', value: 'Italiana Custom' },
+            ].map(({ icon, label, value }) => (
+              <div className="candidate-item" key={label}>
+                <span className="candidate-icon">{icon}</span>
+                <div className="candidate-content">
+                  <span className="candidate-label">{label}</span>
+                  <span className="candidate-value">{value}</span>
+                </div>
+              </div>
+            ))}
+          </div>
           
           <div className="audio-examples">
             <div className="audio-item">

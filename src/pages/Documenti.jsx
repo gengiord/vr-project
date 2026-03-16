@@ -10,7 +10,7 @@ export default function Documenti() {
         <div className="tesi-grid">
           <FileCard icon="📄" title="Tesi Completa" description="Versione impaginata pronta per la stampa e consultazione." disabled />
           <FileCard icon="📝" title="Tesi Editabile" description="Versione modificabile per appunti e riferimenti." disabled />
-          <FileCard icon="🎯" title="Presentazione" description="Slide complete per la difesa orale della tesi." disabled />
+          <FileCard icon="🎯" title="Presentazione" description="Presentazione del progetto per la sessione di laurea." disabled />
           <FileCard icon="🎮" title="Esperienza VR" description="Build funzionante del progetto per Meta Quest." disabled />
         </div>
       </div>

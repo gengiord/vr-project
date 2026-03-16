@@ -18,8 +18,6 @@ export const progettoSub = [
   { path: '/storia', label: 'Storia & Storyboard', icon: '📖' },
   { path: '/specifiche', label: 'Specifiche Tecniche', icon: '⚙️' },
   { path: '/gameplay', label: 'Gameplay', icon: '🕹️' },
-  { path: '/moodboard', label: 'Moodboard', icon: '🎨' },
-  { path: '/audio', label: 'Audio', icon: '🎵' },
-  { path: '/reference', label: 'Reference', icon: '🔗' },
+  { path: '/moodboard', label: 'Moodboard & Reference', icon: '🎨' },
   { path: '/timeline', label: 'Timeline', icon: '📅' },
 ];
