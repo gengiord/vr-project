@@ -4,6 +4,17 @@ import SectionCard from '../components/SectionCard';
 
 const changelog = [
   {
+    version: 'v1.7',
+    date: '17 marzo 2026',
+    type: 'feature',
+    items: [
+      'Aggiunta pagina Da Implementare — feedback del relatore con modifiche e migliorie da apportare',
+      'Svuotata pagina Domande per il Relatore — domande risolte dopo il colloquio',
+      'Changelog, Domande, Da Implementare spostati nella sezione Risorse della Home',
+      'Rimossi Documenti e Team dal menu principale — accessibili solo dalla Home',
+    ],
+  },
+  {
     version: 'v1.6',
     date: '16 marzo 2026',
     type: 'feature',

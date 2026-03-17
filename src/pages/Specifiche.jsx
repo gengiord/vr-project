@@ -43,17 +43,37 @@ export default function Specifiche() {
           </table>
         </SectionCard>
 
-        <SectionCard title="AI">
+        <SectionCard title="Strumenti AI — Utilizzo e Risultati">
           <table>
             <thead>
-              <tr><th>Strumento</th><th>Uso</th></tr>
+              <tr><th>Strumento</th><th>Uso nel progetto</th><th>Risultati e note</th></tr>
             </thead>
             <tbody>
-              <tr><td>Claude Code</td><td>Assistente di codifica avanzato per sviluppo Unity C#, architettura, debugging</td></tr>
-              <tr><td>Windsurf (Cascade)</td><td>Assistente di codifica per documentazione, gestione del sito e sviluppo</td></tr>
-              <tr><td>Google Gemini</td><td>Ricerca, analisi testi accademici, generazione bozze per la tesi, brainstorming</td></tr>
-              <tr><td>ElevenLabs</td><td>Generazione voce narrante italiana custom, musica e SFX (Multilingual v3)</td></tr>
-              <tr><td>Meshy AI</td><td>Generazione modelli 3D e concept art per ambienti e oggetti interattivi</td></tr>
+              <tr>
+                <td><strong>Claude Code</strong></td>
+                <td>Sviluppo Unity C#, architettura sistema, debugging, refactoring</td>
+                <td>Alta qualità del codice prodotto. Utile per strutturare sistemi complessi (hand tracking, state machine). Limitazione: non ha accesso diretto al progetto Unity — richiede copia-incolla manuale del contesto.</td>
+              </tr>
+              <tr>
+                <td><strong>Windsurf (Cascade)</strong></td>
+                <td>Documentazione sito, gestione codice React/CSS, sviluppo iterativo</td>
+                <td>Efficace per iterazioni rapide sul frontend. Integrazione diretta con il filesystem riduce il friction. Meno preciso di Claude Code su task di architettura complessa.</td>
+              </tr>
+              <tr>
+                <td><strong>Google Gemini</strong></td>
+                <td>Ricerca accademica, analisi testi, brainstorming, bozze tesi</td>
+                <td>Utile per sintesi di paper lunghi e generazione di prime bozze. Buona capacità di ragionamento su temi psicologici. Usato principalmente nella fase di ricerca teorica (Sett. 1-2).</td>
+              </tr>
+              <tr>
+                <td><strong>ElevenLabs</strong></td>
+                <td>Generazione voce narrante italiana (Multilingual v3), musica, SFX</td>
+                <td>Qualità della voce molto alta — tono caldo e intimo adatto al contesto. Possibilità di clonare voci custom. Limitazione: il piano gratuito vincola la lunghezza degli audio e l'accesso alle voci più naturali.</td>
+              </tr>
+              <tr>
+                <td><strong>Meshy AI</strong></td>
+                <td>Generazione modelli 3D low-poly e concept art per ambienti e oggetti</td>
+                <td>Veloce per prototipi e placeholder. Qualità sufficiente per lo stile low-poly del progetto. Limitazione: i modelli richiedono sempre pulizia manuale in Blender (topologia, UV, rigging).</td>
+              </tr>
             </tbody>
           </table>
         </SectionCard>

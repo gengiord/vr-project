@@ -3,6 +3,18 @@ import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
 import SectionCard from '../components/SectionCard';
 
+function SafeImg({ src, alt, style }) {
+  const [failed, setFailed] = useState(false);
+  if (failed) {
+    return (
+      <div className="img-placeholder" style={{ minHeight: 140, ...style }}>
+        <span>🖼️</span><span>Immagine non disponibile</span>
+      </div>
+    );
+  }
+  return <img src={src} alt={alt} style={style} onError={() => setFailed(true)} />;
+}
+
 const base = import.meta.env.BASE_URL;
 
 const frames = [
@@ -72,7 +84,7 @@ function RefCard({ title, meta, description, elements, link, linkText, video, im
             allowFullScreen
           />
         ) : image ? (
-          <img src={image} alt={title} />
+          <SafeImg src={image} alt={title} />
         ) : (
           <span className="placeholder">Media non disponibile</span>
         )}
@@ -193,7 +205,7 @@ export default function Moodboard() {
             <div className="gallery-grid">
               {frames.map((f, i) => (
                 <div className="gallery-item" key={f.num} onClick={() => openLightbox(i)}>
-                  <img src={`assets/images/${f.num}.png`} alt={`Frame ${f.num}`} />
+                  <SafeImg src={`assets/images/${f.num}.png`} alt={`Frame ${f.num}`} />
                   <div className="overlay">
                     <span className="g-number">Frame {f.num}</span>
                     <div className="g-title">{f.title}</div>
@@ -270,7 +282,7 @@ export default function Moodboard() {
           <span className="lb-close" onClick={closeLightbox}>&times;</span>
           <span className="lb-nav lb-prev" onClick={(e) => { e.stopPropagation(); navLightbox(-1); }}>‹</span>
           <span className="lb-nav lb-next" onClick={(e) => { e.stopPropagation(); navLightbox(1); }}>›</span>
-          <img src={`assets/images/${frames[lightbox].num}.png`} alt="" onClick={(e) => e.stopPropagation()} />
+          <SafeImg src={`assets/images/${frames[lightbox].num}.png`} alt={frames[lightbox].title} onClick={(e) => e.stopPropagation()} />
           <div className="lb-caption">Frame {frames[lightbox].num} — {frames[lightbox].title}</div>
         </div>
       )}

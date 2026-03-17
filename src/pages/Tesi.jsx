@@ -9,6 +9,13 @@ export default function Tesi() {
       <div className="page">
         <PageHeader icon="📚" title="Lutto nell'era digitale" subtitle="La realtà virtuale come strumento di supporto nell'elaborazione della perdita" />
 
+        {/* Domanda di ricerca in primo piano */}
+        <SectionCard title="Domanda di Ricerca">
+          <blockquote style={{ fontSize: '1.05rem', borderLeftColor: 'var(--accent)', borderLeftWidth: '4px', fontStyle: 'normal', lineHeight: 1.65 }}>
+            È possibile realizzare un progetto in realtà virtuale che possa supportare l'elaborazione di un lutto, con valenza psico-educativa, utilizzando la <strong>Grief and Growth Therapy</strong> come framework teorico?
+          </blockquote>
+        </SectionCard>
+
         <SectionCard title="Info Candidato">
           <div className="candidate-info">
             {[
@@ -27,12 +34,6 @@ export default function Tesi() {
               </div>
             ))}
           </div>
-        </SectionCard>
-
-        <SectionCard title="Domanda di Ricerca">
-          <blockquote>
-            È possibile realizzare un progetto in realtà virtuale che possa supportare l'elaborazione di un lutto, con valenza psico-educativa, utilizzando la Grief and Growth Therapy come framework teorico?
-          </blockquote>
         </SectionCard>
 
         <SectionCard title="Motivazione">

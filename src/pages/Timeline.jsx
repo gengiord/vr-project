@@ -27,7 +27,7 @@ const PHASES = [
         week: '3',
         dates: '17 Mar – 23 Mar 2026',
         title: 'Consulenza con lo Psicologo',
-        status: 'upcoming',
+        status: 'active',
         desc: 'Sessione con professionista per validare l\'approccio psico-educativo, verificare l\'aderenza al framework GGT e definire i limiti etici dell\'esperienza.',
         tasks: [
           'Preparazione domande e materiale per la sessione',

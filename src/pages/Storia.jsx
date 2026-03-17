@@ -2,6 +2,27 @@ import { useState, useCallback } from 'react';
 import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
 
+function SafeImg({ src, alt, className, style, onClick }) {
+  const [failed, setFailed] = useState(false);
+  if (failed) {
+    return (
+      <div className="img-placeholder" style={style}>
+        <span>🖼️</span><span>Immagine non disponibile</span>
+      </div>
+    );
+  }
+  return (
+    <img
+      src={src}
+      alt={alt}
+      className={className}
+      style={style}
+      onClick={onClick}
+      onError={() => setFailed(true)}
+    />
+  );
+}
+
 const acts = [
   {
     phase: 'Prologo',
@@ -154,7 +175,7 @@ export default function Storia() {
                     <div className="frame-voice">{f.voice}</div>
                   </div>
                   <div className="frame-image" onClick={() => openLightbox(globalIndex)} style={{ cursor: 'pointer' }}>
-                    <img src={`assets/images/${f.num}.png`} alt={`Frame ${f.num}`} />
+                    <SafeImg src={`assets/images/${f.num}.png`} alt={`Frame ${f.num}`} />
                   </div>
                 </div>
               );
@@ -166,7 +187,7 @@ export default function Storia() {
         <div className="gallery-grid">
           {allFrames.map((f, i) => (
             <div className="gallery-item" key={f.num} onClick={() => openLightbox(i)}>
-              <img src={`assets/images/${f.num}.png`} alt={`Frame ${f.num}`} />
+              <SafeImg src={`assets/images/${f.num}.png`} alt={`Frame ${f.num}`} />
               <div className="overlay">
                 <span className="g-number">Frame {f.num}</span>
                 <div className="g-title">{f.title}</div>
@@ -181,7 +202,7 @@ export default function Storia() {
           <span className="lb-close" onClick={closeLightbox}>&times;</span>
           <span className="lb-nav lb-prev" onClick={(e) => { e.stopPropagation(); navLightbox(-1); }}>‹</span>
           <span className="lb-nav lb-next" onClick={(e) => { e.stopPropagation(); navLightbox(1); }}>›</span>
-          <img src={`assets/images/${allFrames[lightbox].num}.png`} alt="" onClick={(e) => e.stopPropagation()} />
+          <SafeImg src={`assets/images/${allFrames[lightbox].num}.png`} alt={allFrames[lightbox].title} onClick={(e) => e.stopPropagation()} />
           <div className="lb-caption">Frame {allFrames[lightbox].num} — {allFrames[lightbox].title}</div>
         </div>
       )}

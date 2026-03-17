@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
 import DashCard from '../components/DashCard';
@@ -7,6 +8,15 @@ export default function Home() {
     <Layout>
       <div className="dashboard">
         <PageHeader icon="🏠" title="Lutto nell'era digitale" subtitle="Documentazione tesi e progetto" />
+
+        <Link to="/da-implementare" className="featured-card">
+          <span className="featured-icon">🛠️</span>
+          <div className="featured-text">
+            <h3>Da Implementare</h3>
+            <p>Modifiche e migliorie da apportare al progetto — feedback del relatore.</p>
+          </div>
+          <span className="featured-arrow">→</span>
+        </Link>
 
         <h2 className="section-header">Tesi</h2>
         <div className="dashboard-grid">
@@ -18,22 +28,18 @@ export default function Home() {
         <h2 className="section-header">Progetto VR</h2>
         <div className="dashboard-grid">
           <DashCard to="/progetto" icon="🎮" title="Game Design" description="Info generali, principi di design e navigazione del progetto." />
-          <DashCard to="/storia" icon="📖" title="Storia" description="Struttura narrativa, 20 frame con concept art e galleria." />
-          <DashCard to="/specifiche" icon="⚙️" title="Specifiche Tecniche" description="Software, SDK, strumenti AI e gameplay." />
           <DashCard to="/moodboard" icon="🎨" title="Moodboard & Reference" description="Stile visivo, palette, concept art e riferimenti ispiratori." />
+          <DashCard to="/storia" icon="📖" title="Storia & Storyboard" description="Struttura narrativa, 20 frame con concept art e galleria." />
           <DashCard to="/gameplay" icon="🕹️" title="Gameplay" description="Gesture, interazioni, meccaniche di gioco e audio." />
-          <DashCard to="/timeline" icon="📅" title="Timeline" description="Pianificazione su 12 settimane." />
+          <DashCard to="/specifiche" icon="⚙️" title="Specifiche Tecniche" description="Software, SDK, strumenti AI e pipeline di sviluppo." />
+          <DashCard to="/timeline" icon="📅" title="Timeline" description="Pianificazione su 12 settimane — 3 Mar › 25 Mag 2026." />
         </div>
 
         <h2 className="section-header">Risorse</h2>
         <div className="dashboard-grid">
           <DashCard to="/team" icon="👥" title="Team" description="Candidato, relatore e consulente psicologica." />
           <DashCard to="/documenti" icon="📁" title="Documenti" description="Tesi, presentazione e gioco VR disponibili per il download." />
-        </div>
-
-        <h2 className="section-header">Note di Lavoro</h2>
-        <div className="dashboard-grid">
-          <DashCard to="/domande" icon="❓" title="Domande per il Relatore" description="Scope, sviluppo vs prototipazione, comunicazione, companion app e timeline." />
+          <DashCard to="/changelog" icon="📝" title="Changelog" description="Storico delle modifiche e degli aggiornamenti del progetto." />
         </div>
       </div>
     </Layout>

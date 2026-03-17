@@ -26,14 +26,12 @@ export default function Progetto() {
         </SectionCard>
 
         <div className="dashboard-grid">
-          <DashCard to="/storia" icon="📖" title="Storia" description="Struttura narrativa: Prologo, 3 Atti, Epilogo." />
-          <DashCard to="/specifiche" icon="⚙️" title="Specifiche Tecniche" description="Software, SDK e strumenti AI." />
-          <DashCard to="/gameplay" icon="🕹️" title="Gameplay" description="Gesture, interazioni e meccaniche di gioco." />
-          <DashCard to="/moodboard" icon="🎨" title="Moodboard" description="Stile visivo, palette colori, ambienti e reference." />
-          <DashCard to="/storyboard" icon="🎬" title="Storyboard" description="20 frame con testo, concept art e galleria." />
-          <DashCard to="/audio" icon="🎵" title="Audio" description="Voce narrante, musica e SFX." />
-          <DashCard to="/reference" icon="🔗" title="Reference" description="Progetti VR ispiratori e fonti artistiche." />
-          <DashCard to="/timeline" icon="📅" title="Timeline" description="Pianificazione su 12 settimane." />
+          <DashCard to="/moodboard" icon="🎨" title="Moodboard & Reference" description="Stile visivo, palette colori, concept art e riferimenti ispiratori." />
+          <DashCard to="/storia" icon="📖" title="Storia & Storyboard" description="Struttura narrativa: Prologo, 3 Atti, Epilogo. 20 frame di concept art." />
+          <DashCard to="/gameplay" icon="🕹️" title="Gameplay" description="Gesture, interazioni e meccaniche di gioco per ogni atto." />
+          <DashCard to="/specifiche" icon="⚙️" title="Specifiche Tecniche" description="Software, SDK e strumenti AI utilizzati nello sviluppo." />
+          <DashCard to="/timeline" icon="📅" title="Timeline" description="Pianificazione su 12 settimane — 3 Mar › 25 Mag 2026." />
+          <DashCard to="/da-implementare" icon="🛠️" title="Da Implementare" description="Modifiche e migliorie da apportare al progetto — feedback del relatore." />
         </div>
       </div>
     </Layout>
