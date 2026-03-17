@@ -18,6 +18,8 @@ import NotFound from './pages/NotFound';
 import Presentazione from './pages/Presentazione';
 import Domande from './pages/Domande';
 import DaImplementare from './pages/DaImplementare';
+import CompanionApp from './pages/CompanionApp';
+import Prompts from './pages/Prompts';
 
 export default function App() {
   return (
@@ -38,6 +40,8 @@ export default function App() {
       <Route path="/presentazione" element={<Presentazione />} />
       <Route path="/domande" element={<Domande />} />
       <Route path="/da-implementare" element={<DaImplementare />} />
+      <Route path="/companion-app" element={<CompanionApp />} />
+      <Route path="/prompts" element={<Prompts />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

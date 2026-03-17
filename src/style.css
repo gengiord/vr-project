@@ -1152,6 +1152,56 @@ pre {
     line-height: 1.5;
 }
 
+/* ===== PROMPT BLOCK ===== */
+.prompt-block {
+    position: relative;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.prompt-label {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+    border-bottom: 1px solid var(--border);
+}
+
+.prompt-text {
+    margin: 0;
+    padding: 1rem 1rem 2.5rem;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: 'Fira Code', 'Courier New', monospace;
+}
+
+.prompt-copy {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.75rem;
+    padding: 0.25rem 0.6rem;
+    font-size: 0.72rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--bg);
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.prompt-copy:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
 .ref-video-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;

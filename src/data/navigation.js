@@ -17,4 +17,5 @@ export const progettoSub = [
   { path: '/gameplay', label: 'Gameplay', icon: '🕹️' },
   { path: '/specifiche', label: 'Specifiche Tecniche', icon: '⚙️' },
   { path: '/timeline', label: 'Timeline', icon: '📅' },
+  { path: '/companion-app', label: 'Companion App', icon: '📱' },
 ];
